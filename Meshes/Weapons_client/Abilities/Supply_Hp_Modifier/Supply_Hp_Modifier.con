@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Supply_Hp_Modifier
+ObjectTemplate.saveInSeparateFile 1
+
+include Supply_Hp_Modifier.tweak

@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - gravel_road_xpack **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "gravel_road_xpack"
+RoadTemplate.SetWidth 5
+RoadTemplate.SetMaxTesselatedError 0.001
+RoadTemplate.SetBlendFactor 0.9
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\gravel_road_xpack"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\tarmac_overlay_karkand01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/2
+endIf
+

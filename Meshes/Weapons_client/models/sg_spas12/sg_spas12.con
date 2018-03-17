@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sg_spas12
+
+ObjectTemplate.create GenericFireArm sg_spas12
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry sg_spas12
+
+include sg_spas12.tweak

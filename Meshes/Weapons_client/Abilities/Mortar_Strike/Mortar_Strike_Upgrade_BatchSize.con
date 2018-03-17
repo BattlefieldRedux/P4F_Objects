@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Mortar_Strike_Upgrade_BatchSize
+ObjectTemplate.saveInSeparateFile 1
+
+include Mortar_Strike_Upgrade_BatchSize.tweak

@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_park_01
+ObjectTemplate.create SimpleObject harbor_park_01
+ObjectTemplate.geometry harbor_park_01

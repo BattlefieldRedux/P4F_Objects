@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_OnlyFire
+ObjectTemplate.createdInEditor 1
+
+include ambstat_OnlyFire.tweak

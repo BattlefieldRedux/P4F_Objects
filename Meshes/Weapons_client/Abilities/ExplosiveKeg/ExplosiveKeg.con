@@ -1,0 +1,11 @@
+GeometryTemplate.create BundledMesh explosivekeg
+CollisionManager.createTemplate ExplosiveKeg
+
+ObjectTemplate.create GenericFireArm ExplosiveKeg
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.collisionMesh explosivekeg
+ObjectTemplate.mapMaterial 0 Col_ExplosiveKeg 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry explosivekeg_bri

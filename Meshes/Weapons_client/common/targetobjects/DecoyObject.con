@@ -1,0 +1,24 @@
+ObjectTemplate.create TargetObject DecoyObject
+rem ObjectTemplate.setNetworkableInfo LaserTargetInfo
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTDecoy
+ObjectTemplate.disableWhenEmptyVehicle 0
+ObjectTemplate.disableWhenEmptyVehicleDelay 5
+ObjectTemplate.disableWhenWreck 1
+ObjectTemplate.setPlayerOnEnable 1
+
+rem ---BeginComp:Nametag ---
+ObjectTemplate.createComponent Nametag
+rem ObjectTemplate.Nametag.3dMapIcon 37
+ObjectTemplate.Nametag.showItem 1
+ObjectTemplate.Nametag.showDistance 0
+ObjectTemplate.Nametag.show3dIcon 0
+ObjectTemplate.Nametag.teamSpecific 1
+ObjectTemplate.Nametag.showInside 1
+ObjectTemplate.Nametag.maxDistance 60
+ObjectTemplate.Nametag.maxEnemyDistance 60
+ObjectTemplate.Nametag.useTeamColor 1
+ObjectTemplate.Nametag.selectable 1
+ObjectTemplate.Nametag.3dMapIconOffset 0/1/0
+rem ---EndComp ---

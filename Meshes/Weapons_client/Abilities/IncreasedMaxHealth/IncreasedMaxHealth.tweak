@@ -1,0 +1,71 @@
+ObjectTemplate.activeSafe GenericFireArm IncreasedMaxHealth
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\40x23\IncreasedMaxHealth.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\40x23\IncreasedMaxHealth.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\40x23_notSelected\IncreasedMaxHealth.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_IncreasedMaxHealth"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_IncreasedMaxHealth
+ObjectTemplate.weaponHud.showBatteryIconInHud 1
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate IncreasedMaxHealth
+rem ObjectTemplate.ability.addShield <health> <radius> <duration>
+rem 40 5 5, 45 6 6, 50 7 7, 55 8 , 60 10 10
+ObjectTemplate.ability.addShield 30 10 10 5 6
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.fireOnEnable 1
+rem ---EndComp ---
+rem ---BeginComp:AbilityAmmoComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 0
+ObjectTemplate.ammo.timeToStayActive 3
+ObjectTemplate.ammo.usageInterval 15
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_IncreasedMaxHealth"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_IncreasedMaxHealth"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+rem -------------------------------------
+rem ObjectTemplate.addTemplate S_IncreasedMaxHealth_Deploy3P
+rem -------------------------------------
+ObjectTemplate.itemIndex 6
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.7
+ObjectTemplate.allowEmoteAnimation 1
+
+rem ObjectTemplate.activeSafe Sound S_IncreasedMaxHealth_Deploy3P
+rem ObjectTemplate.lowSamples 2147483647
+rem ObjectTemplate.mediumSamples 2147483647
+rem ObjectTemplate.soundFilename "sound/weapons/common/generic_deploy.wav"
+rem ObjectTemplate.loopCount 1
+rem ObjectTemplate.is3dSound 1
+rem ObjectTemplate.stopType 0
+rem ObjectTemplate.volume 0.5
+rem ObjectTemplate.pitch 1.6
+rem ObjectTemplate.reverbLevel 1
+rem ObjectTemplate.minDistance 0.5
+rem ObjectTemplate.halfVolumeDistance 1.5

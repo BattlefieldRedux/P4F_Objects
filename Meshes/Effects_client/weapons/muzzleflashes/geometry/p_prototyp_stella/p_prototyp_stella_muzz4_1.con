@@ -1,0 +1,8 @@
+GeometryTemplate.create MeshParticleMesh p_prototyp_stella_muzz4_1
+
+ObjectTemplate.create Particle p_prototyp_stella_muzz4_1
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NGO-1:ngo
+ObjectTemplate.geometry p_prototyp_stella_muzz4_1
+
+include p_prototyp_stella_muzz4_1.tweak

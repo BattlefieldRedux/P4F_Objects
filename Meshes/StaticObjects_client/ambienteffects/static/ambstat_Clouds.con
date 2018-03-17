@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_clouds
+ObjectTemplate.createdInEditor 1
+
+include ambstat_clouds.tweak

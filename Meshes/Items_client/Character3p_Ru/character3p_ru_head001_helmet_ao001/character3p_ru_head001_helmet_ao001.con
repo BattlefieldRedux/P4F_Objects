@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem character3p_ru_head001_helmet_ao001
+geometryTemplate.itemType CIT_Head
+geometryTemplate.fileName Objects/Items/Character3p_Ru/character3p_ru_head001_helmet_ao001/character3p_ru_head001_helmet_ao001.tga
+geometryTemplate.setCoordinate 4/13
+
+ObjectTemplate.create KitPart character3p_ru_head001_helmet_ao001

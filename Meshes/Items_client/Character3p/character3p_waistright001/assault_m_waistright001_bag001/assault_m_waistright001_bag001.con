@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem assault_m_waistright001_bag001
+geometryTemplate.itemType CIT_Waistright
+geometryTemplate.fileName Objects/Items/Character3p/Character3p_WaistRight001/assault_m_waistright001_bag001/assault_m_waistright001_bag001.tga
+geometryTemplate.setCoordinate 4/109
+
+ObjectTemplate.create KitPart assault_m_waistright001_bag001

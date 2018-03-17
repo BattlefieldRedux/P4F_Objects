@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Passive_SpawnPoint
+ObjectTemplate.saveInSeparateFile 1
+
+include Passive_SpawnPoint.tweak

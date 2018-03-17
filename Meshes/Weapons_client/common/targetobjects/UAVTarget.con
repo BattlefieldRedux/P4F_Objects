@@ -1,0 +1,6 @@
+ObjectTemplate.create TargetObject UAVTarget
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTUnique
+ObjectTemplate.disableWhenEmptyVehicle 1
+ObjectTemplate.disableWhenWreck 1

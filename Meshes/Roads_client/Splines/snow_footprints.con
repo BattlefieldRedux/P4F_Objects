@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - snow_footprints **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "snow_footprints"
+RoadTemplate.SetWidth 5
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.75
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\snow_footprints"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\snow_footprints"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+endIf
+

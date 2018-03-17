@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Knife_Trail
+ObjectTemplate.createdInEditor 1
+
+include E_Knife_Trail.tweak

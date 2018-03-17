@@ -1,0 +1,173 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/2/28 10:24]
+ObjectTemplate.activeSafe EffectBundle p_wreck_generic
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.modifiedByUser "NGOKSU"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_p_wreck_generic_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_p_wreck_generic_Start
+
+ObjectTemplate.activeSafe Emitter P_wreck_Generic_BigPlate
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_wreck_Generic_BigPlate
+ObjectTemplate.intensity CRD_NONE/22/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/1/0/1
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/1/0/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/15/7/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/15/10/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/15/7/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/1
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_wreck_Generic_BigPlate
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/6/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel Low
+
+ObjectTemplate.activeSafe Emitter P_wreck_Generic_SmallPlate
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_wreck_Generic_SmallPlate
+ObjectTemplate.intensity CRD_NONE/55/0/0
+ObjectTemplate.relativePositionInDof CRD_UNIFORM/0.1/0/1
+ObjectTemplate.relativePositionInRight CRD_UNIFORM/0.1/0/1
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/20/8/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/0/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_wreck_Generic_SmallPlate
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/6/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel Medium
+
+ObjectTemplate.activeSafe Emitter P_wreck_Generic_Big
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_wreck_Generic_Big
+ObjectTemplate.intensity CRD_NONE/22/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/5/0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/15/0/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/10/0/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/1
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_wreck_Generic_Big
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/6/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel Low
+
+ObjectTemplate.activeSafe Emitter P_wreck_Generic_Medium
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_wreck_Generic_Medium
+ObjectTemplate.intensity CRD_NONE/44/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/12/0/1
+ObjectTemplate.positionalSpeedInUp CRD_UNIFORM/19/1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/12/0/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/5/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/5/0/1
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_wreck_Generic_Medium
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/6/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel Medium
+
+ObjectTemplate.activeSafe Emitter P_wreck_Generic_Small
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_wreck_Generic_Small
+ObjectTemplate.intensity CRD_NONE/22/0/0
+ObjectTemplate.positionalSpeedInDof CRD_UNIFORM/17/0/1
+ObjectTemplate.positionalSpeedInUp CRD_NONE/21/1/0
+ObjectTemplate.positionalSpeedInRight CRD_UNIFORM/17/0/1
+ObjectTemplate.rotationalSpeedInDof CRD_UNIFORM/8/0/1
+ObjectTemplate.rotationalSpeedInUp CRD_UNIFORM/8/0/1
+ObjectTemplate.rotationalSpeedInRight CRD_UNIFORM/8/0/1
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_wreck_Generic_Small
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/6/1/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel High
+

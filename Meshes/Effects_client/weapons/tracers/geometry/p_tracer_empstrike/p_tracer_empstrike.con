@@ -1,0 +1,8 @@
+GeometryTemplate.create MeshParticleMesh p_tracer_empstrike
+
+ObjectTemplate.create Particle p_tracer_empstrike
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.geometry p_tracer_empstrike
+
+include p_tracer_empstrike.tweak

@@ -1,0 +1,19 @@
+ObjectTemplate.activeSafe GenericAbility Rpg_Upgrade_Ammo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent UpgradeWeapon
+
+rem apply to named weapon type
+ObjectTemplate.upgradeWeapon.appliesTo UVTWeaponItemType
+
+rem enumerate the weapon types we want to apply this upgrade to (could be an arbitrary amount)
+ObjectTemplate.upgradeWeapon.addApplyToWeaponItemType WITAntiTank
+
+rem syntax convention:
+rem ObjectTemplate.upgradeWeapon.<componentName><parameterName><Mod/Replace> <value>
+
+rem modify ammo clip of weapon
+ObjectTemplate.upgradeWeapon.ammoCompNrOfMagsMod 3
+

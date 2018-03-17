@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/2/2 9:17]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.create SimpleObject lrg_stonebridge
+ObjectTemplate.creator MFR-1:mfr
+ObjectTemplate.modifiedByUser gti
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry lrg_stonebridge
+ObjectTemplate.setCollisionMesh lrg_stonebridge
+ObjectTemplate.mapMaterial 0 stone 12
+ObjectTemplate.mapMaterial 1 tarmac 4
+ObjectTemplate.mapMaterial 2 gravel 3
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+
+

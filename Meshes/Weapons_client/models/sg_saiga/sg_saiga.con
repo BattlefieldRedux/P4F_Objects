@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sg_saiga
+
+ObjectTemplate.create GenericFireArm sg_saiga
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry sg_saiga
+
+include sg_saiga.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility IncreaseHPLimit
+ObjectTemplate.saveInSeparateFile 1
+
+include IncreaseHPLimit.tweak

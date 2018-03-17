@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled road_edge_xpack
+ObjectTemplate.create SimpleObject road_edge_xpack
+ObjectTemplate.geometry road_edge_xpack

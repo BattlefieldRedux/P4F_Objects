@@ -1,0 +1,4 @@
+ObjectTemplate.create RemoteControlledObject GroundCannonControlObject
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.rcType RCCannon
+ObjectTemplate.minTimeBetweenActivation 5

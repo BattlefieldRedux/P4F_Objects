@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambStat_Sound_Karkand_quad_LevelAmbience_1
+ObjectTemplate.createdInEditor 1
+
+include ambStat_Sound_Karkand_quad_LevelAmbience_1.tweak

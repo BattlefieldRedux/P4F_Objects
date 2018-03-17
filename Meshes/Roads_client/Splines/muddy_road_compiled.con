@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled muddy_road
+ObjectTemplate.create SimpleObject muddy_road
+ObjectTemplate.geometry muddy_road

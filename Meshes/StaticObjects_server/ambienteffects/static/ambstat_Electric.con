@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_electric
+ObjectTemplate.createdInEditor 1
+
+include ambstat_electric.tweak

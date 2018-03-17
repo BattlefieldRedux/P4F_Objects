@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle amdStat_waterRipples
+ObjectTemplate.createdInEditor 1
+
+include amdStat_waterRipples.tweak

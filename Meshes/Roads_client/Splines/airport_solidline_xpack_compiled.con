@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled airport_solidline_xpack
+ObjectTemplate.create SimpleObject airport_solidline_xpack
+ObjectTemplate.geometry airport_solidline_xpack

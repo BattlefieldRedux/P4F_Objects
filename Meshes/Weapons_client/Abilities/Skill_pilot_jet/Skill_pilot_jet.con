@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Skill_pilot_jet
+ObjectTemplate.saveInSeparateFile 1
+
+include Skill_pilot_jet.tweak

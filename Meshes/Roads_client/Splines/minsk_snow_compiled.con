@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled minsk_snow
+ObjectTemplate.create SimpleObject minsk_snow
+ObjectTemplate.geometry minsk_snow

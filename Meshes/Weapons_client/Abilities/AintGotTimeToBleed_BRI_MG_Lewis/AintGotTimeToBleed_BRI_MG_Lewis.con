@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm AintGotTimeToBleed_BRI_MG_Lewis
+ObjectTemplate.saveInSeparateFile 1
+
+include AintGotTimeToBleed_BRI_MG_Lewis.tweak

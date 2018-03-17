@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled airport_road_01
+ObjectTemplate.create SimpleObject airport_road_01
+ObjectTemplate.geometry airport_road_01

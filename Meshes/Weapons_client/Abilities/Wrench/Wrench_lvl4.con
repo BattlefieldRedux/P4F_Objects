@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Wrench_lvl4
+ObjectTemplate.saveInSeparateFile 1
+
+include Wrench_lvl4.tweak

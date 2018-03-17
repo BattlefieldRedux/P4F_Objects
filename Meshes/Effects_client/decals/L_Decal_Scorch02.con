@@ -1,0 +1,4 @@
+ObjectTemplate.create decal L_Decal_Scorch02
+ObjectTemplate.createdInEditor 1
+
+include L_Decal_Scorch02.tweak

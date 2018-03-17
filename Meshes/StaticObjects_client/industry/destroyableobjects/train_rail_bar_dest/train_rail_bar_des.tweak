@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/5/2 17:30]
+GeometryTemplate.doNotGenerateLightmaps 1
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject train_rail_bar_des
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.modifiedByUser ful
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry train_rail_bar_des
+ObjectTemplate.setCollisionMesh train_rail_bar_des
+ObjectTemplate.mapMaterial 0 wood 59
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

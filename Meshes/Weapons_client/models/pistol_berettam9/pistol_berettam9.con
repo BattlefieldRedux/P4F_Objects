@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh pistol_berettam9
+
+ObjectTemplate.create GenericFireArm pistol_berettam9
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry pistol_berettam9
+
+include pistol_berettam9.tweak

@@ -1,0 +1,11 @@
+ObjectTemplate.activeSafe GenericAbility Ladder_Speed_Modifier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9998
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent SpeedModifier
+rem ObjectTemplate.SpeedModifier.addSpeedModifierType SMTRunning -- for speed mod when running (modifier type exist, but this is not implemented in code yet)
+rem ObjectTemplate.SpeedModifier.addSpeedModifierType SMTSwimming -- for speed mod when swimming (modifier type exist, but this is not implemented in code yet)
+ObjectTemplate.SpeedModifier.addSpeedModifierType SMTLadder
+ObjectTemplate.SpeedModifier.speedMod 2
+

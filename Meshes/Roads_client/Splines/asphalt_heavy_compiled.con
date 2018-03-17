@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled asphalt_heavy
+ObjectTemplate.create SimpleObject asphalt_heavy
+ObjectTemplate.geometry asphalt_heavy

@@ -1,0 +1,7 @@
+ObjectTemplate.create TargetObject PodTarget
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.targetType TTPod
+ObjectTemplate.disableWhenWreck 0
+ObjectTemplate.disableWhenEmptyVehicle 0
+ObjectTemplate.timeToLive 0
+ObjectTemplate.activeOnCreate 1

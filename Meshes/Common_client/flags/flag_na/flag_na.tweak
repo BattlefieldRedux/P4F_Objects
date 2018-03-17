@@ -1,0 +1,12 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/4 14:5]
+ObjectTemplate.activeSafe AnimatedBundle flag_na
+ObjectTemplate.creator BHU-3:bhu
+ObjectTemplate.modifiedByUser "bhu"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 3
+ObjectTemplate.geometry flag_na
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.skeleton Objects\Common\Flags\flag_setup.ske
+ObjectTemplate.animationSystem1P Objects\Common\Flags\AnimationSystem.inc
+
+

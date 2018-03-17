@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - minsk_concreteroad **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "minsk_concreteroad"
+RoadTemplate.SetWidth 15
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.97
+RoadTemplate.SetPrio 1
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\concreteroad04_"
+RoadTemplateTexture.SetMirror 1
+RoadTemplateTexture.SetScale 1/0.5
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\overlay_tracks"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 3/8
+endIf
+

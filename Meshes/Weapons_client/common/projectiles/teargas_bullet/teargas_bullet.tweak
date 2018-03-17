@@ -1,0 +1,19 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/4 6:33]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile teargas_bullet
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.modifiedByUser "jeremypr"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry teargas_bullet
+ObjectTemplate.setCollisionMesh teargas_bullet
+ObjectTemplate.mapMaterial 0 Collision_Material 46
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.timeToLive CRD_UNIFORM/3/0/0
+ObjectTemplate.material -1
+ObjectTemplate.hasOnTimeEffect 1
+

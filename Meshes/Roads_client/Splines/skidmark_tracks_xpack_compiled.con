@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled skidmark_tracks_xpack
+ObjectTemplate.create SimpleObject skidmark_tracks_xpack
+ObjectTemplate.geometry skidmark_tracks_xpack

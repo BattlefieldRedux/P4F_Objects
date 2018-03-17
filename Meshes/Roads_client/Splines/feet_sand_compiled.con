@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled feet_sand
+ObjectTemplate.create SimpleObject feet_sand
+ObjectTemplate.geometry feet_sand

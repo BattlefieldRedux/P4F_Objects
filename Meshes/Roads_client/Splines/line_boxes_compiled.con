@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled line_boxes
+ObjectTemplate.create SimpleObject line_boxes
+ObjectTemplate.geometry line_boxes

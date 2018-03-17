@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Skill_coaxial_mg_tank
+ObjectTemplate.saveInSeparateFile 1
+
+include Skill_coaxial_mg_tank.tweak

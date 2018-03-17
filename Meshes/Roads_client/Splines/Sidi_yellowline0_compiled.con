@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled Sidi_yellowline0
+ObjectTemplate.create SimpleObject Sidi_yellowline0
+ObjectTemplate.geometry Sidi_yellowline0

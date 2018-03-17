@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Nametag_Detection
+ObjectTemplate.saveInSeparateFile 1
+
+include Nametag_Detection.tweak

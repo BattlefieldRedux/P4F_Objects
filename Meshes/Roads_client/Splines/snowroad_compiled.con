@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled snowroad
+ObjectTemplate.create SimpleObject snowroad
+ObjectTemplate.geometry snowroad

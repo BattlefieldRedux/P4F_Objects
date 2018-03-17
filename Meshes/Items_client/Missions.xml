@@ -1,0 +1,29 @@
+﻿<missions>
+  <item id="6000">
+    <name>UnnamedMission</name>
+    <category>General</category>
+    <kits>63</kits>
+    <repeatable>false</repeatable>
+    <popItem>false</popItem>
+    <resetMode>Normal</resetMode>
+    <localized>false</localized>
+    <valorPoints>0</valorPoints>
+    <heroPoints>0</heroPoints>
+    <xp>0</xp>
+    <prestigePoints>0</prestigePoints>
+    <minLevel>0</minLevel>
+    <missionPrereq>0</missionPrereq>
+    <criterias>
+      <criteria>
+        <trigger>Kill</trigger>
+        <val>0</val>
+        <text>Kill on:Player, Enemy</text>
+        <behavior>Normal</behavior>
+        <resetMode>Normal</resetMode>
+        <as>Player</as>
+        <on>Player, Enemy</on>
+        <with>Any</with>
+      </criteria>
+    </criterias>
+  </item>
+</missions>

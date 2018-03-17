@@ -1,0 +1,236 @@
+rem Vehicle Repair
+rem Weapon CON File for Vehicle_Repair (2167)
+
+ObjectTemplate.create GenericFireArm Vehicle_Repair
+ObjectTemplate.assetId 2167
+ObjectTemplate.saveInSeparateFile 1
+
+ObjectTemplate.geometry abil_repairtool
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\repairtool\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\repairtool\AnimationSystem3p.inc
+
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2167.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2167.tga
+ObjectTemplate.weaponHud.specialAbilityIcon Ingame\Weapons\Icons\Hud\SpecialKitIcons\wrench.tga
+ObjectTemplate.weaponHud.hudName "WEAPON_NAME_wrench"
+ObjectTemplate.weaponHud.guiIndex 56
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasMag 0
+ObjectTemplate.weaponHud.hasFireRate 1
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.showBatteryIconInHud 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 600
+ObjectTemplate.fire.addFireRate 2
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+rem ---EndComp ---
+rem ---BeginComp:ReplenishingAmmoComp ---
+ObjectTemplate.createComponent ReplenishingAmmoComp
+ObjectTemplate.ammo.magSize -1
+ObjectTemplate.ammo.changeMagAt 1
+ObjectTemplate.ammo.minimumTimeUntilReload 0.01
+ObjectTemplate.ammo.abilityDrain 0.06
+ObjectTemplate.ammo.abilityRadius 4
+ObjectTemplate.ammo.abilityStrength 3
+ObjectTemplate.ammo.abilityCost 0.3
+ObjectTemplate.ammo.abilityMaterial 55
+ObjectTemplate.ammo.replenishingType RTHeal
+ObjectTemplate.ammo.onlyActiveWhileFiring 1
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_HANDHELD_WRENCH_fixStuff"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_HANDHELD_WRENCH_fixStuff"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 0
+rem ---EndComp ---
+ObjectTemplate.geometry abil_repairtool
+ObjectTemplate.setCollisionMesh UNL_Repair
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_unl_repair_Projectile_Looping
+ObjectTemplate.addTemplate S_unl_repair_Fire1P
+ObjectTemplate.addTemplate S_wrench_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_wrench_Fire3P
+ObjectTemplate.addTemplate S_wrench_BoltClick
+ObjectTemplate.addTemplate S_wrench_TriggerClick
+ObjectTemplate.addTemplate S_wrench_SwitchFireRate
+ObjectTemplate.addTemplate S_wrench_Reload1P
+ObjectTemplate.addTemplate S_wrench_Reload3P
+ObjectTemplate.addTemplate S_wrench_Deploy1P
+ObjectTemplate.addTemplate S_wrench_Deploy3P
+ObjectTemplate.addTemplate S_wrench_Zoom
+rem -------------------------------------
+
+rem ObjectTemplate.projectileTemplate BlankProjectile
+rem ObjectTemplate.velocity 1000
+rem ObjectTemplate.itemIndex 6
+rem ObjectTemplate.delayToUse 0.958
+
+
+
+rem -------------------------------------------------------------------------
+
+
+
+ObjectTemplate.projectileTemplate unl_repair_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 40
+ObjectTemplate.itemIndex 4
+rem ObjectTemplate.altItemIndex 6
+ObjectTemplate.delayToUse 0.958
+
+ObjectTemplate.create GenericProjectile unl_repair_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+rem ---EndComp ---
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+rem -------------------------------------
+rem ObjectTemplate.addTemplate S_unl_repair_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/0.067/0/0
+ObjectTemplate.material 38
+
+ObjectTemplate.initialMinDamage 0
+ObjectTemplate.mediumMinDamage 0
+ObjectTemplate.longMinDamage 0
+ObjectTemplate.initialMaxDamage 0
+ObjectTemplate.mediumMaxDamage 0
+ObjectTemplate.longMaxDamage 0
+ObjectTemplate.mediumDistance 0
+ObjectTemplate.longDistance 0
+
+
+
+
+
+
+
+
+
+
+
+rem -------------------------------------------------------------------------
+
+
+ObjectTemplate.activeSafe Sound S_unl_repair_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Handheld\Pistols\repairgun_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Fire1P_Outdoor
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Handheld\Pistols\repairgun_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Fire3P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Handheld\Pistols\repairgun_fire.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.6
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0/2/0/1/0/1/0/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 4
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_BoltClick
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_TriggerClick
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_SwitchFireRate
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Reload1P
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Reload3P
+ObjectTemplate.modifiedByUser tda
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Deploy1P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "objects/weapons/handheld/wrench/sounds/wrench_deploy_1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.51
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Deploy3P
+ObjectTemplate.modifiedByUser tda
+ObjectTemplate.soundFilename "objects/weapons/handheld/wrench/sounds/wrench_deploy_3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.51
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Vehicle_Repair_Zoom
+ObjectTemplate.modifiedByUser tda
+

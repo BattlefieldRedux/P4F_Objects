@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem character3p_hands001_braclet001
+geometryTemplate.itemType CIT_Hands
+geometryTemplate.fileName Objects/Items/Character3p/character3p_hands001_braclet001/character3p_hands001_braclet001.tga
+geometryTemplate.setCoordinate 442/273
+
+ObjectTemplate.create KitPart character3p_hands001_braclet001

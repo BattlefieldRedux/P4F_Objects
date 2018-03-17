@@ -1,0 +1,33 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/10/18 9:28]
+ObjectTemplate.activeSafe EffectBundle e_sfx_exp_distant_grenade
+ObjectTemplate.modifiedByUser "pwallo"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_sfx_exp_distant_grenade_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/6/0/0
+ObjectTemplate.randomAgeFactor CRD_NORMAL/0/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 1
+ObjectTemplate.cameraShake 1
+
+ObjectTemplate.activeSafe Sound S_e_sfx_exp_distant_grenade_Start
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/assault/effects/explosions/handgrenade_distant_01.wav,sound/assault/effects/explosions/handgrenade_distant_02.wav,sound/assault/effects/explosions/handgrenade_distant_03.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.75
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0.003/0.9/1/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0.005/0.75/1/
+ObjectTemplate.halfVolumeDistance 300
+ObjectTemplate.soundRadius 30
+

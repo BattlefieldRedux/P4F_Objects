@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled dirtroad02_xpack
+ObjectTemplate.create SimpleObject dirtroad02_xpack
+ObjectTemplate.geometry dirtroad02_xpack

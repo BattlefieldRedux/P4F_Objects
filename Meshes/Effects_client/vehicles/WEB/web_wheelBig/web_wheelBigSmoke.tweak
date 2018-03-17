@@ -1,0 +1,28 @@
+rem *** Generated with Bf2Editor.exe [created: 2007/1/23 3:42]
+ObjectTemplate.activeSafe WheelEffectBundle web_wheelBigSmoke
+ObjectTemplate.modifiedByUser "dsundberg"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 108
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.AlphaIntensityRange 0.2/0.85
+ObjectTemplate.AlphaIntensityUsed 0
+ObjectTemplate.AlphaIntensityFromSpeed 0/7
+ObjectTemplate.AlphaIntensityFromSpeedInDof 0.3/10
+ObjectTemplate.EmitScaleFactorRange 0.2/0.9
+ObjectTemplate.EmitScaleFactorUsed 0
+ObjectTemplate.EmitScaleFactorFromSpeed 2/10
+ObjectTemplate.EmitScaleFactorFromSpeedInDof 0.4/10
+ObjectTemplate.EmitSpeedScaleRange 1/1
+ObjectTemplate.EmitSpeedScaleUsed 0
+ObjectTemplate.AgeScaleFactorRange 1/1
+ObjectTemplate.AgeScaleFactorUsed 0
+ObjectTemplate.StartAgeRange 0/0
+ObjectTemplate.StartAgeUsed 0
+ObjectTemplate.SoundIntensityRange 1/1
+ObjectTemplate.SoundIntensityUsed 0
+rem end Auto-generated effectProperties-part.
+ObjectTemplate.emitDirectionZFromSpeedDof 1
+

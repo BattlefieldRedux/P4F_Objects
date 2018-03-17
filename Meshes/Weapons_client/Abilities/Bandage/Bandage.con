@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Bandage
+ObjectTemplate.saveInSeparateFile 1
+
+include Bandage.tweak

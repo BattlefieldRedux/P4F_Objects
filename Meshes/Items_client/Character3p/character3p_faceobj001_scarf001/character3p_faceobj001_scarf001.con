@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem character3p_faceobj001_scarf001
+geometryTemplate.itemType CIT_FaceObj
+geometryTemplate.fileName Objects/Items/Character3p/character3p_faceobj001_scarf001/character3p_faceobj001_scarf001.tga
+geometryTemplate.setCoordinate 22/3
+
+ObjectTemplate.create KitPart character3p_faceobj001_scarf001

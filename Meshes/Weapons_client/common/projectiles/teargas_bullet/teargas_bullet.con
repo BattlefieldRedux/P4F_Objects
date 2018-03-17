@@ -1,0 +1,15 @@
+GeometryTemplate.create BundledMesh teargas_bullet
+CollisionManager.createTemplate teargas_bullet
+
+ObjectTemplate.create GenericProjectile teargas_bullet
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEREMYP:jeremypr
+ObjectTemplate.collisionMesh teargas_bullet
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry teargas_bullet
+
+include teargas_bullet.tweak
+
+

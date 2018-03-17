@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_Battlesmoke
+ObjectTemplate.createdInEditor 1
+
+include ambstat_Battlesmoke.tweak

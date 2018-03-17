@@ -1,0 +1,7 @@
+ObjectTemplate.create TargetObject TracerDartObject
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTTracerDart
+ObjectTemplate.disableWhenEmptyVehicle 0
+ObjectTemplate.disableWhenEmptyVehicleDelay 5
+ObjectTemplate.disableWhenWreck 1

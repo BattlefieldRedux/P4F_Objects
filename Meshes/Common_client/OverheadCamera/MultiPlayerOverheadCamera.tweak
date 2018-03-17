@@ -1,0 +1,18 @@
+rem *** Generated with Bf2Editor.exe [created (manually): 2005/02/07]
+ObjectTemplate.modifiedByUser JSL
+ObjectTemplate.fOV 0.3
+ObjectTemplate.speed 50.0
+ObjectTemplate.height 260
+ObjectTemplate.setNetworkableInfo GhostAlwaysWithPrediction
+
+rem ---BeginComp:VehicleHud ---
+ObjectTemplate.createComponent VehicleHud
+ObjectTemplate.vehicleHud.standardHelpEnabled 0
+ObjectTemplate.vehicleHud.showInfo 0
+ObjectTemplate.vehicleHud.guiIndex 0
+ObjectTemplate.vehicleHud.enablePostProcessingOnGuiIndex 0
+rem ---EndComp ---
+
+rem ---BeginComp:PostProcess ---
+ObjectTemplate.createComponent PostProcess
+rem ---EndComp ---

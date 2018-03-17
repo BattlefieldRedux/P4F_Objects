@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh abil_motionsensor
+CollisionManager.createTemplate abil_motionsensor
+
+ObjectTemplate.create SimpleObject abil_motionsensor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.collisionMesh abil_motionsensor
+ObjectTemplate.mapMaterial 0 ColMaterial 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry abil_motionsensor
+
+include abil_motionsensor.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Ability_Flare_Bri
+ObjectTemplate.createdInEditor 1
+
+include E_Ability_Flare_Bri.tweak

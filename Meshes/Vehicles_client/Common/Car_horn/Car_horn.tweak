@@ -1,0 +1,114 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/1/12 23:18]
+ObjectTemplate.activeSafe GenericFireArm Car_horn
+ObjectTemplate.isDummyWeapon 1
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.guiIndex -1
+ObjectTemplate.weaponHud.hasMag 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.showAmmo 0
+ObjectTemplate.weaponHud.showClips 0
+ObjectTemplate.weaponHud.showInfo 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAmmoComp ---
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize -1
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.muteOnFire 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultZoomComp ---
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.addZoomFactor 0
+rem ---EndComp ---
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+rem ObjectTemplate.addTemplate S_Car_horn_Fire1P
+ObjectTemplate.addTemplate S_Car_horn_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_Car_horn_Fire3P
+ObjectTemplate.addTemplate S_Car_horn_BoltClick
+ObjectTemplate.addTemplate S_Car_horn_TriggerClick
+ObjectTemplate.addTemplate S_Car_horn_SwitchFireRate
+ObjectTemplate.addTemplate S_Car_horn_Reload1P
+ObjectTemplate.addTemplate S_Car_horn_Reload3P
+ObjectTemplate.addTemplate S_Car_horn_Deploy1P
+ObjectTemplate.addTemplate S_Car_horn_Deploy3P
+ObjectTemplate.addTemplate S_Car_horn_Zoom
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Car_horn_Projectile
+
+ObjectTemplate.create GenericProjectile Car_horn_Projectile
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+rem ---BeginComp:DefaultCollisionComp ---
+ObjectTemplate.createComponent DefaultCollisionComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+rem ---EndComp ---
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Car_horn_Projectile_Looping
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/0.01/0/0
+ObjectTemplate.material -1
+
+rem ObjectTemplate.activeSafe Sound S_Car_horn_Fire1P
+rem ObjectTemplate.soundFilename "Sound/Assault/Vehicles/Common/Car_Horn/Horn.wav"
+rem ObjectTemplate.loopCount 0
+rem ObjectTemplate.is3dSound 0
+rem ObjectTemplate.stopType 1
+rem ObjectTemplate.volume 0.65
+rem ObjectTemplate.pitch 1.1
+rem ObjectTemplate.pan 0.5
+rem ObjectTemplate.reverbLevel 1
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Fire1P_Outdoor
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Fire3P
+ObjectTemplate.soundFilename "Sound/Assault/Vehicles/Common/Car_Horn/Horn.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.9
+ObjectTemplate.pitch 1.1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 5.5
+
+ObjectTemplate.activeSafe Sound S_Car_horn_BoltClick
+
+ObjectTemplate.activeSafe Sound S_Car_horn_TriggerClick
+
+ObjectTemplate.activeSafe Sound S_Car_horn_SwitchFireRate
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Reload1P
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Reload3P
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Deploy1P
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Deploy3P
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Zoom
+
+ObjectTemplate.activeSafe Sound S_Car_horn_Projectile_Looping
+ObjectTemplate.createdInEditor 1

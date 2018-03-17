@@ -1,0 +1,6 @@
+ObjectTemplate.activeSafe GenericAbility Skill_pilot_helicopter
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9503
+ObjectTemplate.activateOnKitPickup 1
+ObjectTemplate.createComponent Skill
+ObjectTemplate.skill.addPositionTypeSkill VPTHelicopterPilot

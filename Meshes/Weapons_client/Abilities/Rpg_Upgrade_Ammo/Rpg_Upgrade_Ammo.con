@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Rpg_Upgrade_Ammo
+ObjectTemplate.saveInSeparateFile 1
+
+include Rpg_Upgrade_Ammo.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm IncreasedMaxHealth
+ObjectTemplate.saveInSeparateFile 1
+
+include IncreasedMaxHealth.tweak

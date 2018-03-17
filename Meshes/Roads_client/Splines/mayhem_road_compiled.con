@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled mayhem_road
+ObjectTemplate.create SimpleObject mayhem_road
+ObjectTemplate.geometry mayhem_road

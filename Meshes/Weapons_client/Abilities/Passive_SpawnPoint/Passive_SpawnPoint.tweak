@@ -1,0 +1,21 @@
+ObjectTemplate.activeSafe GenericAbility Passive_SpawnPoint
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9103
+ObjectTemplate.activateOnKitPickup 1
+
+rem ObjectTemplate.createComponent HudElements
+rem ObjectTemplate.hudElements.newlyActivatedIcon Ingame\Abilities\ability2153.tga
+rem ObjectTemplate.hudElements.activeIcon Ingame\Abilities\ability2153n.tga
+rem ObjectTemplate.hudElements.newlyActivatedIconShowDuration 3
+
+rem ObjectTemplate.createComponent Duration
+rem ObjectTemplate.duration.duration 12
+
+rem ObjectTemplate.createComponent CoolDown
+rem ObjectTemplate.coolDown.coolDownTime 20
+
+rem ObjectTemplate.createComponent UseCount
+
+
+ObjectTemplate.createComponent SpawnPoint
+ObjectTemplate.spawnPoint.radius 40

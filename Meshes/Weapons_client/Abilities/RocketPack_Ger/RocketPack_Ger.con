@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm RocketPack_Ger
+ObjectTemplate.saveInSeparateFile 1
+
+include RocketPack_Ger.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_sfx_exp_close
+ObjectTemplate.createdInEditor 1
+
+include e_sfx_exp_close.tweak

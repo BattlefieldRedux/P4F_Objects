@@ -1,0 +1,7 @@
+GeometryTemplate.create SoldierTextureItem character3p_ru_legs001_long001
+geometryTemplate.itemType CIT_Legs
+geometryTemplate.diffuseTextureFileName Objects/Items/Character3p_Ru/character3p_ru_legs001_long001/character3p_ru_legs001_long001.tga
+geometryTemplate.bumpTextureFileName Objects/Items/Character3p_Ru/character3p_ru_legs001_long001/character3p_ru_legs001_long001_b.tga
+geometryTemplate.setCoordinate 2/2
+
+ObjectTemplate.create KitPart character3p_ru_legs001_long001

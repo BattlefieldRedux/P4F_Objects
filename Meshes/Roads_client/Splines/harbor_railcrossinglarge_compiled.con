@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_railcrossinglarge
+ObjectTemplate.create SimpleObject harbor_railcrossinglarge
+ObjectTemplate.geometry harbor_railcrossinglarge

@@ -1,0 +1,7 @@
+GeometryTemplate.create SoldierTextureItem character3p_hands001_glove002
+geometryTemplate.itemType CIT_Hands
+geometryTemplate.fileName Objects/Items/Character3p/character3p_hands001_glove002/character3p_hands001_glove002.tga
+geometryTemplate.setCoordinate 428/396
+
+ObjectTemplate.create KitPart character3p_hands001_glove002
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ar_scarl
+
+ObjectTemplate.create GenericFireArm ar_scarl
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry ar_scarl
+
+include ar_scarl.tweak

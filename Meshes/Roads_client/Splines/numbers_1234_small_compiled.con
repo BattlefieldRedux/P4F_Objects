@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled numbers_1234_small
+ObjectTemplate.create SimpleObject numbers_1234_small
+ObjectTemplate.geometry numbers_1234_small

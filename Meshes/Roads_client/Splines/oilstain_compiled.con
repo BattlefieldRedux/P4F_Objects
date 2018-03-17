@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled oilstain
+ObjectTemplate.create SimpleObject oilstain
+ObjectTemplate.geometry oilstain

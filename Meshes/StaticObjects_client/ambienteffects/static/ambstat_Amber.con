@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_amber
+ObjectTemplate.createdInEditor 1
+
+include ambstat_amber.tweak

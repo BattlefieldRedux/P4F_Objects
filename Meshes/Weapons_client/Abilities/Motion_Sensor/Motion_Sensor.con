@@ -1,0 +1,199 @@
+rem Weapon CON File for Motion_Sensor (2172)
+
+
+ObjectTemplate.create GenericFireArm Motion_Sensor
+ObjectTemplate.assetId 2172
+ObjectTemplate.saveInSeparateFile 1
+
+ObjectTemplate.geometry abil_motionsensor
+
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\motionsensor\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\motionsensor\AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2172.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2172.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\ability2172.tga
+ObjectTemplate.weaponHud.guiIndex 9
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_Motion_Sensor
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_2172"
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate Motion_Sensor
+ObjectTemplate.ability.coolDownPersistentThroughDeath 1
+ObjectTemplate.ability.hideDurationProgressBar 0
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+ObjectTemplate.fire.projectileStartPositionStand 0.65/0.37/0.18
+ObjectTemplate.fire.projectileStartPositionCrouch 0.65/0.37/0.18
+ObjectTemplate.fire.maxProjectilesInWorld 2
+ObjectTemplate.fire.busyUntilButtonRelease 0
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.fireCompleteDelay 0.3
+ObjectTemplate.fire.fireOnEnable 1
+ObjectTemplate.fire.criticalHitChance 0
+ObjectTemplate.fire.criticalHitDamage 0
+ObjectTemplate.fire.fireLaunchDelay 0.55
+ObjectTemplate.fire.fireCompleteDelay 0.3
+rem ---EndComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.abilityCost 0
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 60
+ObjectTemplate.ammo.taxOnFire 1
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 1
+ObjectTemplate.ammo.usageInterval 60
+ObjectTemplate.ammo.canBeDisabled 0
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.createComponent DefaultZoomComp
+
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.projectileTemplate Motion_Sensor_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 23
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITHandgrenade
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 0
+
+ObjectTemplate.create GenericProjectile Motion_Sensor_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_rifgrenade_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+ObjectTemplate.collision.bouncing 1
+
+ObjectTemplate.createComponent MotionSensorComp
+ObjectTemplate.motionSensor.sensingRadius 30
+ObjectTemplate.motionSensor.pingInterval 2
+ObjectTemplate.motionSensor.showEnemiesDuration 1
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+ObjectTemplate.createComponent DefaultPenetrateComp
+
+ObjectTemplate.geometry abil_motionsensor
+ObjectTemplate.setCollisionMesh abil_motionsensor
+ObjectTemplate.mapMaterial 46 Metal 46
+ObjectTemplate.drag 0
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.8
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType RotationalPoint
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 46
+ObjectTemplate.centerOfCollisionOffset 0/-0.03/0
+
+ObjectTemplate.addTemplate e_Keg_trail
+ObjectTemplate.timeToLive CRD_NONE/30/0/0
+ObjectTemplate.material 54
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 1
+ObjectTemplate.mediumMinDamage 1
+ObjectTemplate.longMinDamage 1
+ObjectTemplate.initialMaxDamage 1
+ObjectTemplate.mediumMaxDamage 1
+ObjectTemplate.longMaxDamage 1
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+ObjectTemplate.damageOwner 1
+ObjectTemplate.activeDefenseEnabled 1
+ObjectTemplate.forceUpdate 1
+
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.activeSafe Sound S_Motion_Sensor_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_MOTIONSENSOR\GAD_MOTIONSENSOR_throw1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Motion_Sensor_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_MOTIONSENSOR\GAD_MOTIONSENSOR_throw1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 2
+ObjectTemplate.halfVolumeDistance 7
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Motion_Sensor_Deploy1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_MOTIONSENSOR\GAD_MOTIONSENSOR_deploy1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+
+ObjectTemplate.activeSafe Sound S_Motion_Sensor_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_MOTIONSENSOR\GAD_MOTIONSENSOR_deploy1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1

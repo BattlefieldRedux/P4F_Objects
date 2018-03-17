@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled crater_scorch_huge
+ObjectTemplate.create SimpleObject crater_scorch_huge
+ObjectTemplate.geometry crater_scorch_huge

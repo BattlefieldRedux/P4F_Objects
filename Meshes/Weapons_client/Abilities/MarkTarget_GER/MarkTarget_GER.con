@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm MarkTarget_GER
+ObjectTemplate.saveInSeparateFile 1
+
+include MarkTarget_GER.tweak

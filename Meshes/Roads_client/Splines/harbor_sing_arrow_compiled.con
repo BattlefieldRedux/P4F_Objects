@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_sing_arrow
+ObjectTemplate.create SimpleObject harbor_sing_arrow
+ObjectTemplate.geometry harbor_sing_arrow

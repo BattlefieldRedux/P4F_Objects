@@ -1,0 +1,284 @@
+<!-- faction 1 = british, 2 = germans, 3 = both -->
+<!-- kit 1 = commando, 2 = soldier, 4 = gunner, 1+2+4 = 7 = all, 1+2=3=commando+soldier, 1+4=5=commando+gunner, 2+4=6=soldier+gunner -->
+<emotes>
+
+	<!-- wave -->
+	<item id="5000">
+		<faction>3</faction>
+		<trigger>wave</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_C_Hello_01.wav</sound>
+	</item>
+
+	<!-- angry -->
+	<item id="5001">
+		<faction>3</faction>
+		<trigger>angry</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_N_Angry_01.wav</sound>
+	</item>
+
+	<!-- cheer -->
+	<item id="5002">
+		<faction>3</faction>
+		<trigger>cheer</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Cheer_01.wav</sound>
+	</item>
+	
+	<!-- yes -->
+	<item id="5003">
+		<faction>3</faction>
+		<trigger>yes</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Yes_01.wav</sound>
+	</item>
+	
+	<!-- no -->
+	<item id="5004">
+		<faction>3</faction>
+		<trigger>no</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_N_No_01.wav</sound>
+	</item>
+
+	<!-- laugh -->
+	<item id="5005">
+		<faction>3</faction>
+		<trigger>laugh</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_C_Laugh_01.wav</sound>
+	</item>
+
+	<!-- thanks -->
+	<item id="5006">
+		<faction>3</faction>
+		<trigger>thanks</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Thanks_01.wav</sound>
+	</item>
+
+	<!-- medic -->
+	<item id="5007">
+		<faction>3</faction>
+		<trigger>medic</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_H_Medic_01.wav</sound>
+	</item>
+
+ 	<!-- taunt -->
+	<item id="5008">
+		<faction>3</faction>
+		<trigger>taunt</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_N_Taunt01_01.wav</sound>
+	</item>
+
+	<!-- beatchest -->
+	<item id="5009">
+		<faction>1</faction>
+		<trigger>beatchest</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Gorilla_01.wav</sound>
+	</item>
+
+	<!-- throatcut -->
+	<item id="5010">
+		<faction>2</faction>
+		<trigger>Throatcut</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_N_Throat_01.wav</sound>
+		
+	</item>
+
+	<!-- robot -->
+	<item id="5011">
+		<faction>2</faction>
+		<trigger>Robot</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Robot_01.wav</sound>
+	</item>
+
+	<!-- chicken -->
+	<item id="5012">
+		<faction>1</faction>
+		<trigger>chicken</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_P_Chicken_01.wav</sound>
+	</item>
+
+	<!-- cupear -->
+	<item id="5013">
+		<faction>2</faction>
+		<trigger>Cupear</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_N_Cupear_01.wav</sound>
+	</item>
+
+	<!-- sweatyforhead -->
+	<item id="5014">
+		<faction>1</faction>
+		<trigger>sweatyforehead</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Brow_01.wav</sound>
+	</item>
+
+	<!-- flex -->
+	<item id="5015">
+		<faction>3</faction>
+		<trigger>flex</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Roar_01.wav</sound>
+	</item>
+
+	<!-- needride -->
+	<item id="5016">
+		<faction>3</faction>
+		<trigger>needride</trigger>
+		<minLevel>1</minLevel>
+		<sound>WEST_VOX_GB_Emote_C_Hello_01.wav</sound>
+	</item>
+	<!-- incoming -->
+	<item id="5017">
+		<faction>3</faction>
+		<trigger>incoming</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+
+	<!-- dustoff -->
+	<item id="5023">
+		<faction>2</faction>
+		<trigger>dustoff</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- airplane -->
+	<item id="5024">
+		<faction>1</faction>
+		<trigger>airplane</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- facepalm -->
+	<item id="5025">
+		<faction>1</faction>
+		<trigger>facepalm</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- usehead -->
+	<item id="5026">
+		<faction>2</faction>
+		<trigger>usehead</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- dunno -->
+	<item id="5027">
+		<faction>1</faction>
+		<trigger>dunno</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- kyokushin -->
+	<item id="5028">
+		<faction>3</faction>
+		<trigger>kyokushin</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- ThumbsDown -->
+	<item id="5029">
+		<faction>2</faction>
+		<trigger>ThumbsDown</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Wolfman -->
+	<item id="5030">
+		<faction>1</faction>
+		<trigger>Wolfman</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Lugosi -->
+	<item id="5031">
+		<faction>2</faction>
+		<trigger>Lugosi</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Goal -->
+	<item id="5032">
+		<faction>3</faction>
+		<trigger>Goal</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Close -->
+	<item id="5033">
+		<faction>3</faction>
+		<trigger>Close</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Redcard -->
+	<item id="5034">
+		<faction>3</faction>
+		<trigger>Redcard</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Trumpet -->
+	<item id="5035">
+		<faction>3</faction>
+		<trigger>Trumpet</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Congas -->
+	<item id="5036">
+		<faction>1</faction>
+		<trigger>Congas</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Tuba -->
+	<item id="5037">
+		<faction>2</faction>
+		<trigger>Tuba</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Guitar -->
+	<item id="5038">
+		<faction>2</faction>
+		<trigger>Guitar</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Bass -->
+	<item id="5039">
+		<faction>1</faction>
+		<trigger>Bass</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Shave -->
+	<item id="5040">
+		<faction>2</faction>
+		<trigger>Shave</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+	<!-- Gunsmoke -->
+	<item id="5041">
+		<faction>1</faction>
+		<trigger>Gunsmoke</trigger>
+		<minLevel>1</minLevel>
+		<sound>West_VOX_GB_Emote_P_Charge_01.wav</sound>
+	</item>
+
+
+</emotes>

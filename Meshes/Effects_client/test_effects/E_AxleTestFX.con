@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_AxleTestFX
+ObjectTemplate.createdInEditor 1
+
+include E_AxleTestFX.tweak

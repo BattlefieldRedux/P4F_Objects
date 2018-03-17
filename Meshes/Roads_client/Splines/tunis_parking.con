@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - tunis_parking **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "tunis_parking"
+RoadTemplate.SetWidth 10
+RoadTemplate.SetMaxTesselatedError 0
+RoadTemplate.SetBlendFactor 0.9
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\harbor_park_02"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\multiroad01_thicker"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+endIf
+

@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled leaf_xpack
+ObjectTemplate.create SimpleObject leaf_xpack
+ObjectTemplate.geometry leaf_xpack

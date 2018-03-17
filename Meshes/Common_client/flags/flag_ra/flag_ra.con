@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh flag_ra
+GeometryTemplate.useRimEffect 0
+
+ObjectTemplate.create AnimatedBundle flag_ra
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator BHU-3:bhu
+ObjectTemplate.geometry flag_ra
+
+include flag_ra.tweak

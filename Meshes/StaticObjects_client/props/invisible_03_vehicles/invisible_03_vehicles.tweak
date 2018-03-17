@@ -1,0 +1,17 @@
+rem *** Generated with Bf2Editor.exe [created: 2009/10/7 14:38]
+GeometryTemplate.maxSkip3pLods 2
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject invisible_03_vehicles
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.modifiedByUser "dmod"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry invisible_03_vehicles
+ObjectTemplate.setCollisionMesh invisible_03_vehicles
+ObjectTemplate.mapMaterial 0 Default 12
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

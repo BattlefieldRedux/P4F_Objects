@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - walkways **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "walkways"
+RoadTemplate.SetWidth 8
+RoadTemplate.SetMaxTesselatedError 0.02
+RoadTemplate.SetBlendFactor 0.93
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\stonetiles"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\overlay_tracks"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+endIf
+

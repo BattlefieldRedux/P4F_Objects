@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled sand
+ObjectTemplate.create SimpleObject sand
+ObjectTemplate.geometry sand

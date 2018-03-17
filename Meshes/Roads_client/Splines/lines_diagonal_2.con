@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - lines_diagonal_2 **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "lines_diagonal_2"
+RoadTemplate.SetWidth 2
+RoadTemplate.SetMaxTesselatedError 1
+RoadTemplate.SetBlendFactor 0.85
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\lines_diagonal2"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\lines_diagonal2"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+endIf
+

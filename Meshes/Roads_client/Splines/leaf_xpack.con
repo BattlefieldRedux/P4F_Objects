@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - leaf_xpack **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "leaf_xpack"
+RoadTemplate.SetWidth 8
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.85
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\leaf_xpack"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\leaf_xpack"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+endIf
+

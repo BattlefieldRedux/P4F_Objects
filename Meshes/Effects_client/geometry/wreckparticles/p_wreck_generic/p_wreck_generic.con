@@ -1,0 +1,77 @@
+GeometryTemplate.create BundledMesh p_wreck_generic
+
+ObjectTemplate.create EffectBundle p_wreck_generic
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.addTemplate P_wreck_Generic_BigPlate
+ObjectTemplate.setPosition -0.2010/0.0422/0
+ObjectTemplate.addTemplate P_wreck_Generic_SmallPlate
+ObjectTemplate.setPosition 0.2269/0/0
+ObjectTemplate.addTemplate P_wreck_Generic_Big
+ObjectTemplate.setPosition 0/0/-0.2353
+ObjectTemplate.addTemplate P_wreck_Generic_Medium
+ObjectTemplate.setPosition 0.0530/-0.0504/0.3958
+ObjectTemplate.addTemplate P_wreck_Generic_Small
+ObjectTemplate.setPosition -0.0863/0.5298/0.0378
+
+ObjectTemplate.create Emitter P_wreck_Generic_BigPlate
+ObjectTemplate.template p_P_wreck_Generic_BigPlate
+
+ObjectTemplate.create Particle p_P_wreck_Generic_BigPlate
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter P_wreck_Generic_SmallPlate
+ObjectTemplate.template p_P_wreck_Generic_SmallPlate
+
+ObjectTemplate.create Particle p_P_wreck_Generic_SmallPlate
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter P_wreck_Generic_Big
+ObjectTemplate.template p_P_wreck_Generic_Big
+
+ObjectTemplate.create Particle p_P_wreck_Generic_Big
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.geometryPart 2
+
+ObjectTemplate.create Emitter P_wreck_Generic_Medium
+ObjectTemplate.template p_P_wreck_Generic_Medium
+
+ObjectTemplate.create Particle p_P_wreck_Generic_Medium
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create Emitter P_wreck_Generic_Small
+ObjectTemplate.template p_P_wreck_Generic_Small
+
+ObjectTemplate.create Particle p_P_wreck_Generic_Small
+ObjectTemplate.collisionMesh p_wreck_generic
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 4
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_generic
+ObjectTemplate.geometryPart 4
+
+include p_wreck_generic.tweak

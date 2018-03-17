@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled lines_diagonal
+ObjectTemplate.create SimpleObject lines_diagonal
+ObjectTemplate.geometry lines_diagonal

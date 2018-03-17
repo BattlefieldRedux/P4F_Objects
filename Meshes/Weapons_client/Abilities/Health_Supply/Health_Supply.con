@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Health_Supply
+ObjectTemplate.saveInSeparateFile 1
+
+include Health_Supply.tweak

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh gasolinebomb
+CollisionManager.createTemplate gasolinebomb
+
+ObjectTemplate.create GenericFireArm gasolinebomb
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-JLUNDE1:jlunde
+ObjectTemplate.collisionMesh gasolinebomb
+ObjectTemplate.mapMaterial 0 Metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry gasolinebomb
+
+include gasolinebomb.tweak

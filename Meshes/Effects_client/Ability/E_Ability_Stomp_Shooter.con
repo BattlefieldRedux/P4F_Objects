@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Ability_Stomp_Shooter
+ObjectTemplate.createdInEditor 1
+
+include E_Ability_Stomp_Shooter.tweak

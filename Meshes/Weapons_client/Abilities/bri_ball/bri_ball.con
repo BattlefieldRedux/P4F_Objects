@@ -1,0 +1,153 @@
+rem Bill's Bomb
+rem Weapon CON File for bri_ball (3159)
+
+
+ObjectTemplate.create GenericFireArm bri_ball
+ObjectTemplate.saveInSeparateFile 1
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.animationSystem1P Objects/Weapons/Abilities/ExplosiveKeg_BRI/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Abilities/ExplosiveKeg_BRI/AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2159.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2159.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\ability2159n.tga
+ObjectTemplate.weaponHud.guiIndex 9
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_bri_ball
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_3159"
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate Bri_ball
+ObjectTemplate.ability.coolDownPersistentThroughDeath 0
+ObjectTemplate.ability.hideDurationProgressBar 1
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 120
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireCompleteDelay .3
+ObjectTemplate.fire.projectileStartPositionStand 0/1/-0.4
+ObjectTemplate.fire.projectileStartPositionCrouch 0/0.8/-0.4
+ObjectTemplate.fire.showWeaponAfterReloadDelay 0
+ObjectTemplate.fire.fireOnEnable 1
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+rem ---EndComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.abilityCost 0
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 120
+ObjectTemplate.ammo.taxOnFire 1
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 1
+ObjectTemplate.ammo.usageInterval 120
+ObjectTemplate.ammo.canBeDisabled 0
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.projectileTemplate bri_ball_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 23
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITHandgrenade
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 0
+
+ObjectTemplate.create GenericProjectile bri_ball_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_Keg_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 0
+ObjectTemplate.collision.bouncing 1
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 9000
+ObjectTemplate.armor.hitPoints 9000
+ObjectTemplate.armor.defaultMaterial 54
+ObjectTemplate.armor.waterLevel -0.3
+
+ObjectTemplate.createComponent PhysicsMod
+ObjectTemplate.physicsMod.activationDelay 1
+ObjectTemplate.physicsMod.amplifyCollision 1
+ObjectTemplate.physicsMod.amplifiedForceSpan 50 200
+rem ObjectTemplate.physicsMod.angleSpan <0=pitch, 1= yaw>
+ObjectTemplate.physicsMod.angleSpan 0 -5 -40
+ObjectTemplate.physicsMod.angleSpan 1 -5 5
+ObjectTemplate.physicsMod.maxAllowedSpeed 50
+
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 54
+ObjectTemplate.detonation.explosionRadius 1
+ObjectTemplate.detonation.explosionForce 0
+ObjectTemplate.detonation.explosionDamage 0
+ObjectTemplate.detonation.detonateOnWaterCollision 0
+ObjectTemplate.detonation.endEffectTemplate e_exp_micro
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.canPickup 0
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry worldcup_football
+ObjectTemplate.setCollisionMesh worldcup_football
+ObjectTemplate.mapMaterial 0 Collision_Material 54
+ObjectTemplate.mass 1
+ObjectTemplate.gravityModifier 0.5
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 54
+ObjectTemplate.centerOfCollisionOffset 0/-0.05/0
+ObjectTemplate.drag 0.2
+
+ObjectTemplate.addTemplate e_Keg_trail
+ObjectTemplate.timeToLive CRD_NONE/120/0/0
+ObjectTemplate.material 54
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 1
+ObjectTemplate.mediumMinDamage 1
+ObjectTemplate.longMinDamage 1
+ObjectTemplate.initialMaxDamage 1
+ObjectTemplate.mediumMaxDamage 1
+ObjectTemplate.longMaxDamage 1
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+ObjectTemplate.damageOwner 1
+ObjectTemplate.activeDefenseEnabled 1
+ObjectTemplate.forceUpdate 1

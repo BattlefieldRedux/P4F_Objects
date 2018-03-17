@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled asphalt_sand
+ObjectTemplate.create SimpleObject asphalt_sand
+ObjectTemplate.geometry asphalt_sand

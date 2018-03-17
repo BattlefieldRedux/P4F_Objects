@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - harbor_railcrossinglarge **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "harbor_railcrossinglarge"
+RoadTemplate.SetWidth 8
+RoadTemplate.SetMaxTesselatedError 0
+RoadTemplate.SetBlendFactor 0.8
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial rock
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\harbor_concrete_01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\harbor_concrete_01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 0/0
+endIf
+

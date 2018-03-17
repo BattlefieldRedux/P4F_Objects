@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem character3p_faceobj001_glasses001
+geometryTemplate.itemType CIT_Faceobj
+geometryTemplate.fileName Objects/Items/Character3p/character3p_faceobj001_glasses001/character3p_faceobj001_glasses001.tga
+geometryTemplate.setCoordinate 4/4
+
+ObjectTemplate.create KitPart character3p_faceobj001_glasses001

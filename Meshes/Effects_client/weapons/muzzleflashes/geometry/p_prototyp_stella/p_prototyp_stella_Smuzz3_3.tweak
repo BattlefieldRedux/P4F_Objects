@@ -1,0 +1,13 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/4/11 0:13]
+ObjectTemplate.activeSafe Particle p_prototyp_stella_Smuzz3_3
+ObjectTemplate.creator NGO-1:ngo
+ObjectTemplate.modifiedByUser "marcbr"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry p_prototyp_stella_muzz3_3
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.timeToLive CRD_NONE/0.02/0/0
+ObjectTemplate.sizeModifier 0.5/0.5/0.8
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+

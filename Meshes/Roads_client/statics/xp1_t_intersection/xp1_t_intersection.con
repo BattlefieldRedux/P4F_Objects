@@ -1,0 +1,9 @@
+GeometryTemplate.create StaticMesh xp1_t_intersection
+
+ObjectTemplate.create SimpleObject xp1_t_intersection
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator RYAN_XP:RyanLo
+ObjectTemplate.geometry xp1_t_intersection
+ObjectTemplate.anchor -5.0000/0/10.0000
+
+include xp1_t_intersection.tweak

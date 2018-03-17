@@ -1,0 +1,7 @@
+GeometryTemplate.create SoldierTextureItem character3p_hat004_helmet001
+geometryTemplate.itemType CIT_Hat
+geometryTemplate.diffuseTextureFileName Objects/Items/Character3p/character3p_hat004_helmet001/character3p_hat004_helmet001.tga
+geometryTemplate.bumpTextureFileName Objects/Items/Character3p/character3p_hat004_helmet001/character3p_hat004_helmet001_b.tga
+geometryTemplate.setCoordinate 0/0
+
+ObjectTemplate.create KitPart character3p_hat004_helmet001

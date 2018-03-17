@@ -1,0 +1,76 @@
+ObjectTemplate.activeSafe GenericFireArm Buff_Health_lvl2
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2026.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2026.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\ability2026n.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_Buff_Health"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_Buff_Health
+ObjectTemplate.weaponHud.showBatteryIconInHud 1
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate Buff_Health_lvl2
+rem ObjectTemplate.ability.addShield <health> <radius> <duration> <score per team mate received shield> <cooldown time>
+rem 30 10 4, 36 10 8, 42 10 12, 54 10 16, 60 10 20
+ObjectTemplate.ability.addShield 35 10 10 5 6
+ObjectTemplate.ability.userEffect EffectUnique_03 10
+ObjectTemplate.ability.victimEffect EffectCommon_08 10
+
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.fireOnEnable 1
+rem ---EndComp ---
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+rem ---BeginComp:AbilityAmmoComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 0
+ObjectTemplate.ammo.timeToStayActive 10
+ObjectTemplate.ammo.usageInterval 15
+ObjectTemplate.ammo.canBeDisabled 0
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_Buff_Health"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_Buff_Health"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Buff_Health_lvl2_Deploy3P
+rem -------------------------------------
+ObjectTemplate.allowInWater 1
+
+ObjectTemplate.delayToUse 0.7
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.activeSafe Sound S_Buff_Health_lvl2_Deploy3P
+ObjectTemplate.soundFilename "Sound\West\Abilities\West_SFX_Ability_Gun_Shield_Activate_01.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.0
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+

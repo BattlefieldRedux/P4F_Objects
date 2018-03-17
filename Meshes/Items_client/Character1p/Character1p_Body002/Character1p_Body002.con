@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierMeshItem Character1p_Body002
+geometryTemplate.itemType CIT_Body
+geometryTemplate.is1p 1
+
+ObjectTemplate.create KitPart Character1p_Body002
+ObjectTemplate.geometry Character1p_Body002

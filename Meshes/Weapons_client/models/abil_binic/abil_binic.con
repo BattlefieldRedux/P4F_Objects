@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_binic
+
+ObjectTemplate.create SimpleObject abil_binic
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.geometry abil_binic
+
+include abil_binic.tweak

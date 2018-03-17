@@ -1,0 +1,14 @@
+ObjectTemplate.activeSafe GenericAbility Supply_Hp_Modifier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent SupplyModifier
+
+rem ObjectTemplate.supplyModifier.addModifySupply <type> <amount>
+rem ObjectTemplate.supplyModifier.addModifySupply MSTAmmo 10
+ObjectTemplate.supplyModifier.addModifySupply MSTHealth 4
+
+
+
+

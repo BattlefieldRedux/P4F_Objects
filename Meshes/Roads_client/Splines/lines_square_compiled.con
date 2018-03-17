@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled lines_square
+ObjectTemplate.create SimpleObject lines_square
+ObjectTemplate.geometry lines_square

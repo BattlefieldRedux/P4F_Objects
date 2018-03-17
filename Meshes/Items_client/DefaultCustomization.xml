@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<customizations>
+  <team id="1"> <!-- russian army -->
+    <kit id="0">	<!-- recon -->
+	    <appearance>2;6;9;11;12</appearance>
+	    <equipment>3004;3006;2017;2168</equipment>
+    </kit>
+    <kit id="1">	<!-- assault -->
+	    <appearance>2;6;9;11;12</appearance>
+	    <equipment>3001;3006;2023;2168</equipment>
+    </kit>
+    <kit id="2">	<!-- medic -->
+	    <appearance>2;6;9;11;12</appearance>
+	    <equipment>3003;3006;2004;2168</equipment>
+    </kit>
+    <kit id="3">	<!-- engineer -->
+	    <appearance>2;6;9;11;12</appearance>
+	    <equipment>3012;3006;2021;2054;2168</equipment>
+    </kit>	
+  </team>
+  <team id="2">	<!-- us army -->
+    <kit id="0">	<!-- recon -->
+	    <appearance>1;2;7;3;4;5</appearance>
+	    <equipment>3004;3006;2017;2168</equipment>
+    </kit>
+    <kit id="1">	<!-- assault -->
+	    <appearance>1;2;7;3;4;5</appearance>
+	    <equipment>3001;3006;2023;2168</equipment>
+    </kit>
+    <kit id="2">	<!-- medic -->
+	    <appearance>1;2;7;3;4;5</appearance>
+	    <equipment>3003;3006;2004;2168</equipment>
+    </kit>
+    <kit id="3">	<!-- engineer -->
+	    <appearance>1;2;7;3;4;5</appearance>
+	    <equipment>3012;3006;2021;2054;2168</equipment>
+    </kit>
+  </team>
+</customizations>

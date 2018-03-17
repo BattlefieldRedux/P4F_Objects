@@ -1,0 +1,12 @@
+ObjectTemplate.activeSafe GenericAbility See_Vehicle_Hp
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent SeeHealth
+rem ObjectTemplate.seeHealth.healthTypeSeen HTSSoldier/HTSVehicle/HTSBoth
+ObjectTemplate.seeHealth.healthTypeSeen HTSVehicle
+
+rem ObjectTemplate.seeHealth.teamSeen TSFriendly/TSEnemy/TSBoth
+ObjectTemplate.seeHealth.teamSeen TSBoth
+

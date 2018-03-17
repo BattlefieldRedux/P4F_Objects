@@ -1,0 +1,6 @@
+ObjectTemplate.activeSafe GenericAbility Skill_coaxial_mg_tank
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9501
+ObjectTemplate.activateOnKitPickup 1
+ObjectTemplate.createComponent Skill
+ObjectTemplate.skill.addWeaponSkill WITCoaxialMg

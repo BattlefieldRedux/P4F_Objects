@@ -1,0 +1,35 @@
+GeometryTemplate.create BundledMesh p_bri_targetdummy_wreck
+
+ObjectTemplate.create EffectBundle p_bri_targetdummy_wreck
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.addTemplate P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.setPosition -0.0340/1.0750/0
+ObjectTemplate.addTemplate P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.setPosition 0.1290/0.0430/0
+
+ObjectTemplate.create Emitter P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.template p_P_Bri_TargetDummy_Wreck_Sign
+
+ObjectTemplate.create Particle p_P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.collisionMesh p_bri_targetdummy_wreck
+ObjectTemplate.mapMaterial 0 col 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_bri_targetdummy_wreck
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.template p_P_Bri_TargetDummy_Wreck_Feet
+
+ObjectTemplate.create Particle p_P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.collisionMesh p_bri_targetdummy_wreck
+ObjectTemplate.mapMaterial 0 col 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_bri_targetdummy_wreck
+ObjectTemplate.geometryPart 1
+
+include p_bri_targetdummy_wreck.tweak

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_repairtool
+
+ObjectTemplate.create GenericFireArm abil_repairtool
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.geometry abil_repairtool
+
+include abil_repairtool.tweak

@@ -1,0 +1,78 @@
+ObjectTemplate.activeSafe GenericFireArm MarkTarget_GER_lvl3
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2116.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2116.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\ability2116n.tga
+ObjectTemplate.weaponHud.hudName "KILLMESSAGE_WEAPON_MarkTarget"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_MarkTarget
+rem ---EndComp ---
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate MarkTarget_GER_lvl3
+rem ObjectTemplate.ability.addMarkTargetAreaItem <stay marked time> <min dot to soldier target> 
+rem		<min dot to vehicle target> <min dot to soldier target when zoomed> <min dot to vehicle target when zoomed> 
+rem		<number of marked targets> 
+ObjectTemplate.ability.addMarkTargetAreaItem 10 0.85 0.85 0.99 0.97 2
+ObjectTemplate.ability.userEffect EffectUnique_05 5
+ObjectTemplate.ability.victimEffect EffectCommon_03 10
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 90
+ObjectTemplate.fire.fireOnEnable 1
+ObjectTemplate.fire.forcedWeaponList 1
+rem ---EndComp ---
+rem ---BeginComp:AbilityAmmoComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 0
+ObjectTemplate.ammo.timeToStayActive 1.0
+ObjectTemplate.ammo.usageInterval 13
+ObjectTemplate.ammo.canBeDisabled 0
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_MarkTarget"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_MarkTarget"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+ObjectTemplate.sound.muteOnFire 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+rem -------------------------------------
+ObjectTemplate.addTemplate S_MarkTarget_GER_lvl3_Deploy3P
+rem -------------------------------------
+ObjectTemplate.animationSystem1P Objects/Weapons/Abilities/ExplosiveKeg_BRI/AnimationSystem1p.inc
+ObjectTemplate.animationSystem3P Objects/Weapons/Abilities/ExplosiveKeg_BRI/AnimationSystem3p.inc
+ObjectTemplate.itemIndex 6
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.7
+ObjectTemplate.allowEmoteAnimation 1
+
+ObjectTemplate.activeSafe Sound S_MarkTarget_GER_lvl3_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Abilities\West_SFX_Ability_Com_Target_Activate_01.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1.0
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

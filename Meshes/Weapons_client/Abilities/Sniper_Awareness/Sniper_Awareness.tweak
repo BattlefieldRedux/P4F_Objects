@@ -1,0 +1,29 @@
+ObjectTemplate.activeSafe GenericAbility Sniper_Awareness
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent EnemyAwareness
+
+rem enemy weapon type that this component gives awareness of. This could be a number of weapon types (see below)
+ObjectTemplate.enemyAwareness.addAwareOfWeaponType WITSniperRifle
+rem ObjectTemplate.enemyAwareness.addAwareOfWeaponType WITAntiTank
+
+rem if 1, will only give a warning if the enemy looks at player while zoomed with the weapon
+ObjectTemplate.enemyAwareness.onlyWarnIfEnemyZoomed 1
+
+rem enemy's dot angle to the player within which the player needs to be to receive a warning [-1, 1]
+ObjectTemplate.enemyAwareness.warningMaxDotAngle 0.9995
+
+rem max distance to check for warnings against this weapon
+ObjectTemplate.enemyAwareness.warningMaxDistance 100
+
+rem how often to update the warning to the player (time between updates)
+ObjectTemplate.enemyAwareness.warningInterval 2
+
+rem what message to show/play when player is in enemy's crosshair
+ObjectTemplate.enemyAwareness.warningMessage "AUTO_RULES_sniperAwarenessWarning"
+
+rem how long to show icons in world/minimap
+ObjectTemplate.enemyAwareness.showInHudTime 5
+

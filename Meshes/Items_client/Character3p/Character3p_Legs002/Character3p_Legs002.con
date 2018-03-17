@@ -1,0 +1,5 @@
+GeometryTemplate.create SoldierMeshItem Character3p_Legs002
+geometryTemplate.itemType CIT_Legs
+
+ObjectTemplate.create KitPart Character3p_Legs002
+ObjectTemplate.geometry Character3p_Legs002

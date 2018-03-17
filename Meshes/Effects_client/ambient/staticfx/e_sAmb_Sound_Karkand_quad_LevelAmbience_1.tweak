@@ -1,0 +1,32 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/11/8 16:58]
+ObjectTemplate.activeSafe EffectBundle e_sAmb_Sound_Karkand_quad_LevelAmbience_1
+ObjectTemplate.modifiedByUser "aalmstrom"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_sAmb_Sound_Karkand_quad_LevelAmbience_1_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_sAmb_Sound_Karkand_quad_LevelAmbience_1_Start
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/assault/ambience/global_quad_battle_ambience01.ogg"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 5
+ObjectTemplate.halfVolumeDistance 100
+ObjectTemplate.soundRadius 50
+
+

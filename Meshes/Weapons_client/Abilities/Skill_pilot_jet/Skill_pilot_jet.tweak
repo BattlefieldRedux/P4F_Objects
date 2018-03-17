@@ -1,0 +1,6 @@
+ObjectTemplate.activeSafe GenericAbility Skill_pilot_jet
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9504
+ObjectTemplate.activateOnKitPickup 1
+ObjectTemplate.createComponent Skill
+ObjectTemplate.skill.addPositionTypeSkill VPTJetPilot

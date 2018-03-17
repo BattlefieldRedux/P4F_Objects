@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_TestEffect_MeshParticleTest01
+ObjectTemplate.createdInEditor 1
+
+include E_TestEffect_MeshParticleTest01.tweak

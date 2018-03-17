@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled 20m
+ObjectTemplate.create SimpleObject 20m
+ObjectTemplate.geometry 20m

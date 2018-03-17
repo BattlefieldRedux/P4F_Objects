@@ -1,0 +1,23 @@
+ObjectTemplate.activeSafe GenericAbility Spotted_Modifier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent SpottedModifier
+
+rem amount of enemies that can be spotted simultaneously
+ObjectTemplate.SpottedModifier.maxSpotted 5
+
+rem max search angle for spotting (dot between player's camera direction and line to enemy closest to screen's center. range is [-1, 1] where 1 is at dead center (will practically never happen), ~0.7 is 45 degrees to either side, 0 is 90 degress left/right, -1 is 360 degrees angle)
+ObjectTemplate.SpottedModifier.spottedDotAngle 0.999
+
+rem max distance to enemy closest to screen's center
+ObjectTemplate.SpottedModifier.maxDistanceToEnemy 300
+
+rem when raycast to enemy fails, this is the max distance between raycast intersection pos and enemy
+ObjectTemplate.SpottedModifier.maxSpottedFailDistance 10
+
+rem when spotting multiple enemies, this is the max distance from closest enemy to other enemies
+ObjectTemplate.SpottedModifier.maxDistanceBetweenEnemies 20
+
+

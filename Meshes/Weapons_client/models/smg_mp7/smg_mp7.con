@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh smg_mp7
+
+ObjectTemplate.create GenericFireArm smg_mp7
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry smg_mp7
+
+include smg_mp7.tweak

@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Keg_Sparky
+ObjectTemplate.createdInEditor 1
+
+include E_Keg_Sparky.tweak

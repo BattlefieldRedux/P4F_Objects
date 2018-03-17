@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/4/20 19:27]
+GeometryTemplate.setSubGeometryLodDistance 0 0 20
+GeometryTemplate.setSubGeometryLodDistance 0 1 70
+GeometryTemplate.setSubGeometryLodDistance 0 2 100
+GeometryTemplate.setSubGeometryLodDistance 1 0 30
+GeometryTemplate.setSubGeometryLodDistance 1 1 70
+GeometryTemplate.setSubGeometryLodDistance 1 2 100
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject woodsteel_bridge_segment
+ObjectTemplate.creator MKP-2:mkp
+ObjectTemplate.modifiedByUser dgo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.cullRadiusScale 2.8

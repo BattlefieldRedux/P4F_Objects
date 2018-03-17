@@ -1,0 +1,8 @@
+GeometryTemplate.create SoldierTextureItem character1p_ru_hands001_glove001
+geometryTemplate.itemType CIT_Hands
+geometryTemplate.diffuseTextureFileName Objects/Items/Character1p_Ru/character1p_ru_hands001_glove001/character1p_ru_hands001_glove001.tga
+geometryTemplate.bumpTextureFileName Objects/Items/Character1p_Ru/character1p_ru_hands001_glove001/character1p_ru_hands001_glove001_b.tga
+geometryTemplate.setCoordinate 2/622
+geometryTemplate.is1p 1
+
+ObjectTemplate.create KitPart character1p_ru_hands001_glove001

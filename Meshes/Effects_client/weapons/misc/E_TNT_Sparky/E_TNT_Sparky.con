@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_TNT_Sparky
+ObjectTemplate.createdInEditor 1
+
+include E_TNT_Sparky.tweak

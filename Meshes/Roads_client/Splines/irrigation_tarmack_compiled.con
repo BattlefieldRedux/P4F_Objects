@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled irrigation_tarmack
+ObjectTemplate.create SimpleObject irrigation_tarmack
+ObjectTemplate.geometry irrigation_tarmack

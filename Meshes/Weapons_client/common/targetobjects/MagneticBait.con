@@ -1,0 +1,7 @@
+ObjectTemplate.create TargetObject MagneticBait
+ObjectTemplate.targetType TTMagnet
+ObjectTemplate.disableWhenWreck 0
+ObjectTemplate.disableWhenEmptyVehicle 0
+ObjectTemplate.timeToLive 0
+ObjectTemplate.overrideArmingSpeed 1
+ObjectTemplate.switchPlayerOnLock 1

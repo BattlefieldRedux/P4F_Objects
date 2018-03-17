@@ -1,0 +1,64 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/2/28 10:24]
+ObjectTemplate.activeSafe EffectBundle p_bri_targetdummy_wreck
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.modifiedByUser "NGOKSU"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_p_bri_targetdummy_wreck_Start
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_p_bri_targetdummy_wreck_Start
+
+ObjectTemplate.activeSafe Emitter P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.positionalSpeedInRight CRD_NONE/2.5/0/0
+ObjectTemplate.rotationalSpeedInRight CRD_NONE/-4/0/0
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_Bri_TargetDummy_Wreck_Sign
+ObjectTemplate.geometry p_bri_targetdummy_wreck
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_bri_targetdummy_wreck
+ObjectTemplate.mapMaterial 0 col 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel SuperLow
+
+ObjectTemplate.activeSafe Emitter P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.template p_P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.startRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotation CRD_NONE/0/0/0
+ObjectTemplate.zRotationSnap 1
+
+ObjectTemplate.activeSafe Particle p_P_Bri_TargetDummy_Wreck_Feet
+ObjectTemplate.geometry p_bri_targetdummy_wreck
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_bri_targetdummy_wreck
+ObjectTemplate.mapMaterial 0 col 0
+ObjectTemplate.collisionGroups 56
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel SuperLow
+

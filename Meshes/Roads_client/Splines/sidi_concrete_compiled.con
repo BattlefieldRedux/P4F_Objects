@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled sidi_concrete
+ObjectTemplate.create SimpleObject sidi_concrete
+ObjectTemplate.geometry sidi_concrete

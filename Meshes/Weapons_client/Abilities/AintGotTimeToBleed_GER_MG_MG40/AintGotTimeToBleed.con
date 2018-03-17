@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm AintGotTimeToBleed_GER_MG_MG40
+ObjectTemplate.saveInSeparateFile 1
+
+include AintGotTimeToBleed_GER_MG_MG40.tweak

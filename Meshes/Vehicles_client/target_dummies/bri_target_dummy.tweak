@@ -1,0 +1,35 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/3/17 16:28]
+GeometryTemplate.maxSkip3pLods 2
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe DestroyableObject bri_target_dummy
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.modifiedByUser "nnolby"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 5
+ObjectTemplate.armor.hitPoints 5
+ObjectTemplate.armor.defaultMaterial 10
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.explosionForceMod 0
+ObjectTemplate.armor.explosionForceMax 0
+ObjectTemplate.armor.explosionMaterial 10
+ObjectTemplate.armor.wreckExplosionForceMod 0
+ObjectTemplate.armor.wreckExplosionForceMax 0
+ObjectTemplate.armor.wreckExplosionMaterial 10
+ObjectTemplate.armor.wreckHitPoints 100
+ObjectTemplate.armor.timeToStayAsWreck 100
+ObjectTemplate.armor.dontUseWreck 0
+ObjectTemplate.armor.addArmorEffect 0 p_bri_targetdummy_wreck 0/0/0 0/0/0
+ObjectTemplate.armor.addArmorEffect 0 e_sfx_targetdummy_close 0/0/0 0/0/0
+rem ---EndComp ---
+ObjectTemplate.geometry bri_target_dummy
+ObjectTemplate.setCollisionMesh bri_target_dummy
+ObjectTemplate.mapMaterial 0 metal 10
+ObjectTemplate.mapMaterial 1 wood 10
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.mass 0

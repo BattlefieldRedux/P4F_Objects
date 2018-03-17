@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - lines_narrow **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "lines_narrow"
+RoadTemplate.SetWidth 2
+RoadTemplate.SetMaxTesselatedError 1
+RoadTemplate.SetBlendFactor 0.7
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\line_dashed"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\line_dashed"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+endIf
+

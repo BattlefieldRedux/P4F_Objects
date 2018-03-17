@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled snow_footprints
+ObjectTemplate.create SimpleObject snow_footprints
+ObjectTemplate.geometry snow_footprints

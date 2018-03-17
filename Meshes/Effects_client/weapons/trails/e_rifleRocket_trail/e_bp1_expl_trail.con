@@ -1,0 +1,27 @@
+ObjectTemplate.create EffectBundle e_bp1_expl_trail
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.activeSafe EffectBundle e_bp1_expl_trail
+ObjectTemplate.modifiedByUser "posh"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_bp1_expl_trail_Start
+ObjectTemplate.addTemplate em_RifleRocket_trail_stripe
+ObjectTemplate.setPosition 0/0/-0.126709
+ObjectTemplate.addTemplate em_RifleRocket_trail_hotglow
+ObjectTemplate.setPosition 0/0/-0.11072
+ObjectTemplate.addTemplate em_RifleRocket_trail_hotspotty
+ObjectTemplate.addTemplate em_rifleRocket_Trail_MP_Spark
+ObjectTemplate.setPosition 0/0/-0.14
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 1
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 0
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_bp1_expl_trail_Start

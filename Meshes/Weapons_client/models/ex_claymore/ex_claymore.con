@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh ex_claymore
+CollisionManager.createTemplate ex_claymore
+
+ObjectTemplate.create GenericFireArm ex_claymore
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.collisionMesh ex_claymore
+ObjectTemplate.mapMaterial 0 Collision_Material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ex_claymore
+
+include ex_claymore.tweak

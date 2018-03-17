@@ -1,0 +1,9 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/3/17 16:28]
+ObjectTemplate.activeSafe GroundEffectBundle geb_tank
+ObjectTemplate.modifiedByUser "NGOKSU"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.material 11
+ObjectTemplate.maxTriggerDistance 3
+

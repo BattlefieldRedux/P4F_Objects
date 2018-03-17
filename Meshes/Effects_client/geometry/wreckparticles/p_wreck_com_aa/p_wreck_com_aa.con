@@ -1,0 +1,49 @@
+GeometryTemplate.create BundledMesh p_wreck_com_aa
+
+ObjectTemplate.create EffectBundle p_wreck_com_aa
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.addTemplate P_wreck_Com_AA_canon
+ObjectTemplate.setPosition 0.1113/0.9685/-0.6633
+ObjectTemplate.addTemplate P_wreck_Com_AA_shieldRight
+ObjectTemplate.setPosition 0.5821/1.0226/-0.2761
+ObjectTemplate.addTemplate P_wreck_Com_AA_shieldLeft
+ObjectTemplate.setPosition -0.5756/1.0204/-0.4227
+
+ObjectTemplate.create Emitter P_wreck_Com_AA_canon
+ObjectTemplate.template p_P_wreck_Com_AA_canon
+
+ObjectTemplate.create Particle p_P_wreck_Com_AA_canon
+ObjectTemplate.collisionMesh p_wreck_com_aa
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_com_aa
+ObjectTemplate.geometryPart 0
+
+ObjectTemplate.create Emitter P_wreck_Com_AA_shieldRight
+ObjectTemplate.template p_P_wreck_Com_AA_shieldRight
+
+ObjectTemplate.create Particle p_P_wreck_Com_AA_shieldRight
+ObjectTemplate.collisionMesh p_wreck_com_aa
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_com_aa
+ObjectTemplate.geometryPart 1
+
+ObjectTemplate.create Emitter P_wreck_Com_AA_shieldLeft
+ObjectTemplate.template p_P_wreck_Com_AA_shieldLeft
+
+ObjectTemplate.create Particle p_P_wreck_Com_AA_shieldLeft
+ObjectTemplate.collisionMesh p_wreck_com_aa
+ObjectTemplate.mapMaterial 0 wreckMaterial 0
+ObjectTemplate.collisionPart 2
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_wreck_com_aa
+ObjectTemplate.geometryPart 2
+
+include p_wreck_com_aa.tweak

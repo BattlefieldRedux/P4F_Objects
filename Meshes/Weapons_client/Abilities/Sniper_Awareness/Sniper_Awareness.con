@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Sniper_Awareness
+ObjectTemplate.saveInSeparateFile 1
+
+include Sniper_Awareness.tweak

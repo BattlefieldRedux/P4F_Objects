@@ -1,0 +1,7 @@
+ObjectTemplate.create PlayerControlObject ObjectiveSmoke
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType 0
+ObjectTemplate.hasMobilePhysics 0
+
+include ObjectiveSmoke.tweak

@@ -1,0 +1,14 @@
+GeometryTemplate.create BundledMesh ger_target_dummy
+CollisionManager.createTemplate ger_target_dummy
+
+ObjectTemplate.create DestroyableObject ger_target_dummy
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.collisionMesh ger_target_dummy
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.mapMaterial 1 metal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry ger_target_dummy
+
+include ger_target_dummy.tweak

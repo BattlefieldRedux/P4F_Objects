@@ -1,0 +1,107 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/5/4 14:5]
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericProjectile unl_hub_medic_stationary
+ObjectTemplate.creator BHU-3:bhu
+ObjectTemplate.modifiedByUser "ake"
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+rem ---BeginComp:Armor ---
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 100
+ObjectTemplate.armor.hitPoints 100
+ObjectTemplate.armor.defaultMaterial 4996
+ObjectTemplate.armor.addArmorEffect 0 e_exp_small 0/0/0 0/0/0
+ObjectTemplate.armor.addNametagOnDestroy 0
+rem ---EndComp ---
+rem ---BeginComp:Nametag ---
+ObjectTemplate.createComponent Nametag
+ObjectTemplate.nametag.3dMapIcon 4
+ObjectTemplate.nametag.showDistance 1
+ObjectTemplate.nametag.show3dIcon 1
+ObjectTemplate.nametag.showItem 1
+ObjectTemplate.nametag.useBoundingRadius 1
+ObjectTemplate.nametag.maxDistance 30.0
+ObjectTemplate.nametag.showInside 1
+ObjectTemplate.nametag.showSupply 1
+rem ---EndComp ---
+rem ---BeginComp:StickyCollisionComp ---
+ObjectTemplate.createComponent StickyCollisionComp
+ObjectTemplate.collision.bouncing 1
+ObjectTemplate.collision.maxStickAngle 45
+ObjectTemplate.collision.stickToVehicles 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultProjSoundComp ---
+ObjectTemplate.createComponent DefaultProjSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultPenetrateComp ---
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+rem ---EndComp ---
+ObjectTemplate.geometry unl_hub_medic_stationary
+ObjectTemplate.setCollisionMesh unl_hub_medic_stationary
+ObjectTemplate.mapMaterial 0 Collision_Material 4903
+ObjectTemplate.drag 1
+ObjectTemplate.mass 50
+ObjectTemplate.inertiaModifier 4/4/4
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 90
+ObjectTemplate.otherCollisionLod 2
+ObjectTemplate.bundleSkeleton objects/weapons/stationary/unl_hub_medic_stationary/unl_hub_medic_stationary.ske
+ObjectTemplate.bundleAnimationSystem Objects\Weapons\stationary\unl_hub_medic_stationary\AnimationSystem.inc
+rem -------------------------------------
+ObjectTemplate.setPosition 0/0.1/0
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_NONE/9999/0/0
+ObjectTemplate.material 90
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.localPredictOnClient 1
+
+ObjectTemplate.activeSafe SupplyObject Unl_Hub_Medic_Supply
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.setPosition 0/0.1/0
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.radius 5
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.healSpeed 4
+ObjectTemplate.healStorageSize 0
+ObjectTemplate.ammoStorageSize 0
+ObjectTemplate.sharedStorageSize 300
+ObjectTemplate.destroyWhenEmptyStorage 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_lid1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_lid2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_handle1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_handle2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_interior
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_lock1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+
+ObjectTemplate.activeSafe SimpleObject UNL_HUB_Medic_lock2
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+

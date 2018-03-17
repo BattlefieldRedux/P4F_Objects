@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ru_sni_svd
+
+ObjectTemplate.create GenericFireArm ru_sni_svd
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry ru_sni_svd
+
+include ru_sni_svd.tweak

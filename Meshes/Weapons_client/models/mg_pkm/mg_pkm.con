@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mg_pkm
+
+ObjectTemplate.create GenericFireArm mg_pkm
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.geometry mg_pkm
+
+include mg_pkm.tweak

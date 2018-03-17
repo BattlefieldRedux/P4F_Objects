@@ -1,0 +1,5 @@
+GeometryTemplate.create SoldierMeshItem Character3p_Hat004
+geometryTemplate.itemType CIT_Hat
+
+ObjectTemplate.create KitPart Character3p_Hat004
+ObjectTemplate.geometry Character3p_Hat004

@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled walkways
+ObjectTemplate.create SimpleObject walkways
+ObjectTemplate.geometry walkways

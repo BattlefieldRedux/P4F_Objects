@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem assault_m_hat001_helmet001
+geometryTemplate.itemType CIT_Leg
+geometryTemplate.fileName Objects/Items/Character3p/Character3p_Hat001/assault_m_hat001_helmet001/assault_m_hat001_helmet001.tga
+geometryTemplate.setCoordinate 5/5
+
+ObjectTemplate.create KitPart assault_m_hat001_helmet001

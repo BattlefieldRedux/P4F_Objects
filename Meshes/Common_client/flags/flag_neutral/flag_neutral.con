@@ -1,0 +1,9 @@
+GeometryTemplate.create SkinnedMesh flag_neutral
+GeometryTemplate.useRimEffect 0
+
+ObjectTemplate.create AnimatedBundle flag_neutral
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-SVUKANOVI1:svukanovic
+ObjectTemplate.geometry flag_neutral
+
+include flag_neutral.tweak

@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - harbor_whitearrow_01 **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "harbor_whitearrow_01"
+RoadTemplate.SetWidth 5
+RoadTemplate.SetMaxTesselatedError 0
+RoadTemplate.SetBlendFactor 1
+RoadTemplate.SetPrio 1
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\harbor_white_02"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 0.5/0.25
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\harbor_white_02"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 0/0
+endIf
+

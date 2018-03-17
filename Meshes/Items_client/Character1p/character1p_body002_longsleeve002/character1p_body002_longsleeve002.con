@@ -1,0 +1,8 @@
+GeometryTemplate.create SoldierTextureItem character1p_body002_longsleeve002
+geometryTemplate.itemType CIT_Body
+geometryTemplate.diffuseTextureFileName Objects/Items/Character1p/character1p_body002_longsleeve002/character1p_body002_longsleeve002.tga
+geometryTemplate.bumpTextureFileName Objects/Items/Character1p/character1p_body002_longsleeve002/character1p_body002_longsleeve002_b.tga
+geometryTemplate.setCoordinate 4/0
+geometryTemplate.is1p 1
+
+ObjectTemplate.create KitPart character1p_body002_longsleeve002

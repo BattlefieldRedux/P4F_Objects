@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh p_shell_50cal
+CollisionManager.createTemplate p_shell_50cal
+
+ObjectTemplate.create Particle p_shell_50cal
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-NGOKSU1:NGOKSU
+ObjectTemplate.collisionMesh p_shell_50cal
+ObjectTemplate.mapMaterial 0 shell_50cal 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry p_shell_50cal
+
+include p_shell_50cal.tweak

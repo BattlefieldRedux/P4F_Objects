@@ -1,0 +1,4 @@
+ObjectTemplate.create RemoteControlledObject OrbitalStrikeControlObjectMEC
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.rcType RCOrbitalStrike
+ObjectTemplate.minTimeBetweenActivation 5

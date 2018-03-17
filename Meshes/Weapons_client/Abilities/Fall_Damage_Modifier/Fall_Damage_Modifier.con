@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Fall_Damage_Modifier
+ObjectTemplate.saveInSeparateFile 1
+
+include Fall_Damage_Modifier.tweak

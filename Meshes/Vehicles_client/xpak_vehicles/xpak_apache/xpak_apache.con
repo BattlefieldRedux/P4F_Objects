@@ -1,0 +1,89 @@
+GeometryTemplate.create BundledMesh xpak_apache
+CollisionManager.createTemplate xpak_apache
+
+ObjectTemplate.create PlayerControlObject xpak_apache
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFO:jeffev
+ObjectTemplate.collisionMesh xpak_apache
+ObjectTemplate.mapMaterial 0 heli_armor 0
+ObjectTemplate.mapMaterial 1 glass 0
+ObjectTemplate.mapMaterial 2 Col_weakspots 0
+ObjectTemplate.mapMaterial 3 wreck1 0
+ObjectTemplate.mapMaterial 4 rubber 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometry xpak_apache
+ObjectTemplate.addTemplate xpak_apache_COgunner
+ObjectTemplate.addTemplate xpak_apache_JoystickPilot
+ObjectTemplate.setPosition 0/-0.4769/2.0700
+ObjectTemplate.addTemplate xpak_apache_Wheel_FR
+ObjectTemplate.setPosition 1.0750/-1.8985/0.7407
+ObjectTemplate.addTemplate xpak_apache_Wheel_FL
+ObjectTemplate.setPosition -1.0746/-1.8985/0.7407
+ObjectTemplate.addTemplate xpak_apache_Wheel_R
+ObjectTemplate.setPosition -0.0032/-1.2498/-10.0223
+
+ObjectTemplate.create PlayerControlObject xpak_apache_COgunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.addTemplate xpak_apache_JoystickGunner
+ObjectTemplate.setPosition 0/-0.1002/2.9997
+ObjectTemplate.addTemplate xpak_apache_Gun_Turret
+ObjectTemplate.setPosition 0/-1.6600/2.0450
+
+ObjectTemplate.create RotationalBundle xpak_apache_JoystickGunner
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 2
+ObjectTemplate.addTemplate xpak_apache_Sensors
+ObjectTemplate.setPosition 0/-0.7071/1.3585
+
+ObjectTemplate.create RotationalBundle xpak_apache_Sensors
+ObjectTemplate.collisionPart 3
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 3
+
+ObjectTemplate.create RotationalBundle xpak_apache_Gun_Turret
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 4
+ObjectTemplate.addTemplate xpak_apache_Gun
+ObjectTemplate.setPosition -0.0015/0.0016/-0.0561
+
+ObjectTemplate.create RotationalBundle xpak_apache_Gun
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 5
+ObjectTemplate.addTemplate xpak_apache_GunShot
+ObjectTemplate.setPosition 0.0015/0/1.6367
+
+ObjectTemplate.create GenericFireArm xpak_apache_GunShot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 6
+
+ObjectTemplate.create RotationalBundle xpak_apache_JoystickPilot
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 7
+
+ObjectTemplate.create Spring xpak_apache_Wheel_FR
+ObjectTemplate.collisionPart 8
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 8
+
+ObjectTemplate.create Spring xpak_apache_Wheel_FL
+ObjectTemplate.collisionPart 9
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 9
+
+ObjectTemplate.create Spring xpak_apache_Wheel_R
+ObjectTemplate.collisionPart 10
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.geometryPart 10
+
+include xpak_apache.tweak

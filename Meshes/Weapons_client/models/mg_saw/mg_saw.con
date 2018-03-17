@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh mg_saw
+
+ObjectTemplate.create GenericFireArm mg_saw
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry mg_saw
+
+include mg_saw.tweak

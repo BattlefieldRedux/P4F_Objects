@@ -1,0 +1,6 @@
+ObjectTemplate.activeSafe GenericAbility Skill_AT_Guided_Missile_APC
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9502
+ObjectTemplate.activateOnKitPickup 1
+ObjectTemplate.createComponent Skill
+ObjectTemplate.skill.addWeaponSkill WITApcTow

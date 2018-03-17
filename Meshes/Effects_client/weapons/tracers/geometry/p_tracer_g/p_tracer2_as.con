@@ -1,0 +1,8 @@
+GeometryTemplate.create MeshParticleMesh p_tracer2_as
+
+ObjectTemplate.create Particle p_tracer2_as
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator NGO-1:ngo
+ObjectTemplate.geometry p_tracer2_as
+
+include p_tracer2_as.tweak

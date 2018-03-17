@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm InstantHeal
+ObjectTemplate.saveInSeparateFile 1
+
+include InstantHeal.tweak

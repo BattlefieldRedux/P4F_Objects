@@ -1,0 +1,5 @@
+ObjectTemplate.create ItemContainer Weapon_ParachuteLauncher
+ObjectTemplate.addTemplate ParachuteLauncher
+ObjectTemplate.unlockLevel -1
+
+include Weapons.tweak

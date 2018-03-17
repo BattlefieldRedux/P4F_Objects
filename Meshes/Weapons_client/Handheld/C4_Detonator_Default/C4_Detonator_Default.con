@@ -1,0 +1,212 @@
+rem Detonator
+rem Weapon CON File for C4_Detonator_Default (3032)
+
+ObjectTemplate.create GenericFireArm C4_Detonator_Default
+ObjectTemplate.assetId 3032
+ObjectTemplate.saveInSeparateFile 1
+
+
+ObjectTemplate.geometry abil_c4_detonator
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\min_detonator\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\min_detonator\AnimationSystem3p.inc
+rem ObjectTemplate.AnimationSystem3PFemale FemaleAnimation
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\weapon3031.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\weapon3031.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Weapons\weapon3031n.tga
+ObjectTemplate.weaponHud.guiIndex 1
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_C4_DETONATOR_DEFAULT
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "Assault_Custom_Item_3032"
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 300
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+rem ---EndComp ---
+ObjectTemplate.geometry abil_c4_detonator
+ObjectTemplate.setCollisionMesh abil_c4_detonator
+ObjectTemplate.mapMaterial 0 Rubber 0
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_c4_detonator_Fire1P
+ObjectTemplate.addTemplate S_c4_detonator_Fire1P_Outdoor
+ObjectTemplate.addTemplate S_c4_detonator_Fire3P
+ObjectTemplate.addTemplate S_c4_detonator_BoltClick
+ObjectTemplate.addTemplate S_c4_detonator_TriggerClick
+ObjectTemplate.addTemplate S_c4_detonator_SwitchFireRate
+ObjectTemplate.addTemplate S_c4_detonator_Reload1P
+ObjectTemplate.addTemplate S_c4_detonator_Reload3P
+ObjectTemplate.addTemplate S_c4_detonator_Deploy1P
+ObjectTemplate.addTemplate S_c4_detonator_Deploy3P
+ObjectTemplate.addTemplate S_c4_detonator_Zoom
+rem -------------------------------------
+
+
+rem ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Fire3P
+rem ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Reload1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Reload1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav,Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav,Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Deploy1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\MIN_C4\MIN_C4_depoly1p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_C4_Detonator_Default_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5

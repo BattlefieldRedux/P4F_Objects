@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - Sidi_yellowline0 **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "Sidi_yellowline0"
+RoadTemplate.SetWidth 1
+RoadTemplate.SetMaxTesselatedError 0
+RoadTemplate.SetBlendFactor 0.95
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\sidi_yellowline0"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/3
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\minsk_tarmac_dirty"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/8
+endIf
+

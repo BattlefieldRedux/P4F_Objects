@@ -1,0 +1,4 @@
+ObjectTemplate.create decal S_Decal_ThinMetal_exit
+ObjectTemplate.createdInEditor 1
+
+include S_Decal_ThinMetal_exit.tweak

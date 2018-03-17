@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled suez_tarmac
+ObjectTemplate.create SimpleObject suez_tarmac
+ObjectTemplate.geometry suez_tarmac

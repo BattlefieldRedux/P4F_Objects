@@ -1,0 +1,12 @@
+GeometryTemplate.create StaticMesh strike_at_karkand_superlow
+
+ObjectTemplate.create SimpleObject strike_at_karkand_superlow
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.geometry strike_at_karkand_superlow
+
+ObjectTemplate.create SimpleObject HeightmapPrimary
+
+ObjectTemplate.create SimpleObject mesh
+
+include strike_at_karkand_superlow.tweak

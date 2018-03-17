@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility See_Vehicle_Hp
+ObjectTemplate.saveInSeparateFile 1
+
+include See_Vehicle_Hp.tweak

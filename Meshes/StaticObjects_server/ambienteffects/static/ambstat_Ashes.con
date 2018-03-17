@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_Ashes
+ObjectTemplate.createdInEditor 1
+
+include ambstat_Ashes.tweak

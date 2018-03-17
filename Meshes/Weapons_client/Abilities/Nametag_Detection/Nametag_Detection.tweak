@@ -1,0 +1,7 @@
+ObjectTemplate.activeSafe GenericAbility Nametag_Detection
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent NametagDetection
+ObjectTemplate.nametagDetection.detectionDotAngle 0.9

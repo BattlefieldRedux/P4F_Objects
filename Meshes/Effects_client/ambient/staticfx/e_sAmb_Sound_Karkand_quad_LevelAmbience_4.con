@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle e_sAmb_Sound_Karkand_quad_LevelAmbience_4
+ObjectTemplate.createdInEditor 1
+
+include e_sAmb_Sound_Karkand_quad_LevelAmbience_4.tweak

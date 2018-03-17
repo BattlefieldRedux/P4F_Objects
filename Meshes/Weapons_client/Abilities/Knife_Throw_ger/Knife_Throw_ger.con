@@ -1,0 +1,229 @@
+rem Sly's Savage Knife
+rem Weapon CON File for Knife_Throw_ger (3151)
+
+ObjectTemplate.create GenericFireArm Knife_Throw_ger
+ObjectTemplate.saveInSeparateFile 1
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+
+ObjectTemplate.AnimationSystem3p Objects\Weapons\Abilities\Knife_Throw_ger\AnimationSystem3p.inc
+ObjectTemplate.geometry Com_Knife_throwing
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\abilities\ability2170.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\abilities\ability2170.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\abilities\ability2170n.tga
+ObjectTemplate.weaponHud.guiIndex 6
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString WEST_Custom_Item_2170
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_2170"
+
+ObjectTemplate.createComponent Ability
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 120
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireCompleteDelay 0.7
+ObjectTemplate.fire.fireLaunchDelay 0.6
+ObjectTemplate.fire.projectileStartPositionStand 0.2/1.2/0
+ObjectTemplate.fire.projectileStartPositionCrouch 0.2/0.8/0
+ObjectTemplate.fire.showWeaponAfterReloadDelay 0
+ObjectTemplate.fire.fireOnEnable 1
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.abilityCost 0
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.reloadTime 0
+ObjectTemplate.ammo.taxOnFire 1
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 1
+ObjectTemplate.ammo.usageInterval 3
+ObjectTemplate.ammo.canBeDisabled 0
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.subProjectileDev 0
+ObjectTemplate.deviation.minDevModZoom 0
+ObjectTemplate.deviation.setFireDev 0 0 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+
+ObjectTemplate.projectileTemplate Knife_Throw_ger_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 80
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.weaponsItemType WITSniperRifle
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 1
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.disableInsideVehicle 1
+
+
+ObjectTemplate.create GenericProjectile Knife_Throw_ger_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_knife_trail_0
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.maxStickAngle 10
+ObjectTemplate.collision.bouncing 0
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry Com_Knife_throwing
+ObjectTemplate.setCollisionMesh Com_Knife_throwing
+ObjectTemplate.mapMaterial 0 missileMaterial 0
+ObjectTemplate.drag 0
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.25
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 52
+
+ObjectTemplate.addTemplate e_knife_trail_0
+
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 39
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 15
+ObjectTemplate.mediumMinDamage 15
+ObjectTemplate.longMinDamage 15
+ObjectTemplate.initialMaxDamage 15
+ObjectTemplate.mediumMaxDamage 15
+ObjectTemplate.longMaxDamage 15
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+ObjectTemplate.damageOwner 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.activeDefenseEnabled 1
+
+rem ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_Fire3P
+rem ObjectTemplate.soundFilename "Sound\West\Weaponry\German\Grenade\West_SFX_Weapon_GE_GRE_Stielhandgranate_Fire_3P.wav"
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename ""
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Reload_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Abilities\West_SFX_Ability_KnifeThrow_Ger.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_IdleMale1
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GE_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Knife_Throw_ger_IdleMale2
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GE_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

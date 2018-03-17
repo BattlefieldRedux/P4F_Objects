@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh sr_m24
+
+ObjectTemplate.create GenericFireArm sr_m24
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-KFREDRIKS1:kfredriksson
+ObjectTemplate.geometry sr_m24
+
+include sr_m24.tweak

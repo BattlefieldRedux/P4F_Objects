@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Hit_Detection
+ObjectTemplate.saveInSeparateFile 1
+
+include Hit_Detection.tweak

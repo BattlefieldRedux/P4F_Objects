@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled airport_dashedmulti_xpack
+ObjectTemplate.create SimpleObject airport_dashedmulti_xpack
+ObjectTemplate.geometry airport_dashedmulti_xpack

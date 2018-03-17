@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_Fountain
+ObjectTemplate.createdInEditor 1
+
+include ambstat_Fountain.tweak

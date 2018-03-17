@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem character3p_waistright001_canteen001
+geometryTemplate.itemType CIT_Waistright
+geometryTemplate.fileName Objects/Items/Character3p/character3p_waistright001_canteen001/character3p_waistright001_canteen001.tga
+geometryTemplate.setCoordinate 121/94
+
+ObjectTemplate.create KitPart character3p_waistright001_canteen001

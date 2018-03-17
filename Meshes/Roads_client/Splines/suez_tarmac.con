@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - suez_tarmac **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "suez_tarmac"
+RoadTemplate.SetWidth 10
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.93
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\suez_tarmac"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\overlay_tracks"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 0.7/1.1
+endIf
+

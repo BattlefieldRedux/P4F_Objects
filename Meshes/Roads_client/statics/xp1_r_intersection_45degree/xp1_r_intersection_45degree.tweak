@@ -1,0 +1,14 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/10/8 6:34]
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+rem GeometryTemplate.glowing 0
+rem GeometryTemplate.noLighting 0
+ObjectTemplate.activeSafe SimpleObject xp1_r_intersection_45degree
+ObjectTemplate.creator ROND_XP:ronda
+ObjectTemplate.modifiedByUser "ronda"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry xp1_r_intersection_45degree
+ObjectTemplate.hasMobilePhysics 0
+

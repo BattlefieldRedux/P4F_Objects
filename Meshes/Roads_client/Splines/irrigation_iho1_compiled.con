@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled irrigation_iho1
+ObjectTemplate.create SimpleObject irrigation_iho1
+ObjectTemplate.geometry irrigation_iho1

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_c4_detonator
+
+ObjectTemplate.create GenericFireArm abil_c4_detonator
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry abil_c4_detonator
+
+include abil_c4_detonator.tweak

@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled crater_3m
+ObjectTemplate.create SimpleObject crater_3m
+ObjectTemplate.geometry crater_3m

@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_ChimnySmoke
+ObjectTemplate.createdInEditor 1
+
+include ambstat_ChimnySmoke.tweak

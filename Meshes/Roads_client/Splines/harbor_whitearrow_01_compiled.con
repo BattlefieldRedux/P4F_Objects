@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_whitearrow_01
+ObjectTemplate.create SimpleObject harbor_whitearrow_01
+ObjectTemplate.geometry harbor_whitearrow_01

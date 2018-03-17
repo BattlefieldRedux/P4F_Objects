@@ -1,0 +1,4 @@
+ObjectTemplate.create Bundle ambstat_Light_Red2
+ObjectTemplate.createdInEditor 1
+
+include ambstat_Light_Red2.tweak

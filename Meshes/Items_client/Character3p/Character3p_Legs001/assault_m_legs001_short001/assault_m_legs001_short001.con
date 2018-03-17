@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierTextureItem assault_m_legs001_short001
+geometryTemplate.itemType CIT_Legs
+geometryTemplate.fileName Objects/Items/Character3p/Character3p_Legs001/assault_m_legs001_short001/assault_m_legs001_short001.tga
+geometryTemplate.setCoordinate 0/4
+
+ObjectTemplate.create KitPart assault_m_legs001_short001

@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Spotted_Modifier
+ObjectTemplate.saveInSeparateFile 1
+
+include Spotted_Modifier.tweak

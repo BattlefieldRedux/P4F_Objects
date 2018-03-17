@@ -1,0 +1,278 @@
+rem TNT
+rem Weapon CON File for GasBomb_Bri (3148)
+
+ObjectTemplate.create GenericFireArm GasBomb_Bri
+ObjectTemplate.saveInSeparateFile 1
+
+ObjectTemplate.geometry gasolinebomb
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.userEffect EffectCommon_13 10
+ObjectTemplate.ability.victimEffect EffectCommon_02 10
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem3p Objects\Weapons\Abilities\GasBomb_Bri\AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\abilities\ability2167.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\abilities\ability2167.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\abilities\ability2167n.tga
+ObjectTemplate.weaponHud.guiIndex 9
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_GASBOMB_BRI
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_2167"
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 45
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+ObjectTemplate.fire.fireLaunchDelay 0.8
+ObjectTemplate.fire.fireCompleteDelay 0.3
+ObjectTemplate.fire.projectileStartPositionStand 0.2/0.8/0
+ObjectTemplate.fire.projectileStartPositionCrouch 0.2/0.8/0
+ObjectTemplate.fire.maxProjectilesInWorld 2
+ObjectTemplate.fire.busyUntilButtonRelease 0
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+ObjectTemplate.fire.fireCompleteDelay 0.5
+ObjectTemplate.fire.criticalHitChance 0
+ObjectTemplate.fire.criticalHitDamage 0
+ObjectTemplate.fire.fireLaunchDelay 0.5
+ObjectTemplate.fire.fireCompleteDelay 0.28
+ObjectTemplate.fire.fireOnEnable 1
+
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 1
+ObjectTemplate.ammo.usageInterval 20
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+
+
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.subProjectileDev 0
+ObjectTemplate.deviation.minDevModZoom 0
+ObjectTemplate.deviation.setFireDev 0 0 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+
+
+ObjectTemplate.projectileTemplate GasBomb_Bri_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 23
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITHandgrenade
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 1
+
+ObjectTemplate.create GenericProjectile GasBomb_Bri_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_keg_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 1
+ObjectTemplate.armor.hitPoints 1
+ObjectTemplate.armor.defaultMaterial 40
+ObjectTemplate.armor.waterLevel -0.3
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.bouncing 1
+
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 80
+ObjectTemplate.detonation.explosionRadius 6
+ObjectTemplate.detonation.explosionForce 12
+ObjectTemplate.detonation.explosionDamage 80
+ObjectTemplate.detonation.endEffectTemplate e_exp_gas_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.canPickup 1
+ObjectTemplate.detonation.setDamageOverTime 5 DOTIncendiary 2 12 EffectCommon_02 10
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry gasolinebomb_throw
+ObjectTemplate.setCollisionMesh gasolinebomb_throw
+ObjectTemplate.mapMaterial 38 Metal 38
+ObjectTemplate.drag 1
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 1
+ObjectTemplate.centerOfCollisionOffset 0/0/0
+
+ObjectTemplate.gravityModifier 0.85
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 38
+
+ObjectTemplate.addTemplate e_GasCan_sparky
+ObjectTemplate.setPosition 0.0/0.163/-0.179
+
+ObjectTemplate.addTemplate e_keg_trail
+
+ObjectTemplate.timeToLive CRD_NONE/3/0/0
+ObjectTemplate.material 40
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 0
+ObjectTemplate.mediumMinDamage 0
+ObjectTemplate.longMinDamage 1
+ObjectTemplate.initialMaxDamage 0
+ObjectTemplate.mediumMaxDamage 0
+ObjectTemplate.longMaxDamage 0
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+ObjectTemplate.damageOwner 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.activeDefenseEnabled 1
+
+rem ObjectTemplate.activeSafe Sound S_GasBomb_Bri_Fire3P
+rem ObjectTemplate.soundFilename "Sound\West\Weaponry\English\TNT\West_SFX_Weapon_GB_TNT_TNT_SetTNT.wav"
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename ""
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_Projectile_Looping
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename ""
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1.0
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1.7
+ObjectTemplate.halfVolumeDistance 3.2
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Reload_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Abilities\West_SFX_Ability_GasThrow_Bri.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_IdleMale1
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_GasBomb_Bri_IdleMale2
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+

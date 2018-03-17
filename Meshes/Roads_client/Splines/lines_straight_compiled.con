@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled lines_straight
+ObjectTemplate.create SimpleObject lines_straight
+ObjectTemplate.geometry lines_straight

@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh worldcup_football
+CollisionManager.createTemplate worldcup_football
+
+ObjectTemplate.create GenericFireArm worldcup_football
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-JLUNDE1:jlunde
+ObjectTemplate.collisionMesh worldcup_football
+ObjectTemplate.mapMaterial 0 Leather 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry worldcup_football
+
+include worldcup_football.tweak

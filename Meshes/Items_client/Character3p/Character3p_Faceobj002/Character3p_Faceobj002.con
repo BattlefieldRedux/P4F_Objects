@@ -1,0 +1,5 @@
+GeometryTemplate.create SoldierMeshItem Character3p_Faceobj002
+geometryTemplate.itemType CIT_Faceobj
+
+ObjectTemplate.create KitPart Character3p_Faceobj002
+ObjectTemplate.geometry Character3p_Faceobj002

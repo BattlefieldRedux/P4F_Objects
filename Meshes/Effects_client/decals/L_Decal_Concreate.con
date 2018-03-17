@@ -1,0 +1,4 @@
+ObjectTemplate.create decal L_Decal_Concreate
+ObjectTemplate.createdInEditor 1
+
+include L_Decal_Concreate.tweak

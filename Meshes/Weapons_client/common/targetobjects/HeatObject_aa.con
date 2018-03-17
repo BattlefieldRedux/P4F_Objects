@@ -1,0 +1,6 @@
+ObjectTemplate.create TargetObject HeatObject_aa
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTHeat
+ObjectTemplate.disableWhenWreck 1

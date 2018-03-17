@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm MarkTarget_BRI_lvl3
+ObjectTemplate.saveInSeparateFile 1
+
+include MarkTarget_BRI_lvl3.tweak

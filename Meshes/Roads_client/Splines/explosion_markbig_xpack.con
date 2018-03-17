@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - explosion_markbig_xpack **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "explosion_markbig_xpack"
+RoadTemplate.SetWidth 15
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 1
+RoadTemplate.SetPrio 4
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\explosion_mark_xpack"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\tarmac_overlay_karkand01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+endIf
+

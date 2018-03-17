@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_number_03
+ObjectTemplate.create SimpleObject harbor_number_03
+ObjectTemplate.geometry harbor_number_03

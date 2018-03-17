@@ -1,0 +1,9 @@
+GeometryTemplate.create StaticMesh xp1_r_intersection_45degree
+
+ObjectTemplate.create SimpleObject xp1_r_intersection_45degree
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator RYAN_XP:RyanLo
+ObjectTemplate.geometry xp1_r_intersection_45degree
+ObjectTemplate.anchor 5.0000/0/-12.4985
+
+include xp1_r_intersection_45degree.tweak

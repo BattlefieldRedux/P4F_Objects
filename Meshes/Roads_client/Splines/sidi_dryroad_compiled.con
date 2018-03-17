@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled sidi_dryroad
+ObjectTemplate.create SimpleObject sidi_dryroad
+ObjectTemplate.geometry sidi_dryroad

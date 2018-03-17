@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - sandyroad **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "sandyroad"
+RoadTemplate.SetWidth 10
+RoadTemplate.SetMaxTesselatedError 0
+RoadTemplate.SetBlendFactor 0.88
+RoadTemplate.SetPrio 1
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\tarmac_sandy_xpack"
+RoadTemplateTexture.SetMirror 1
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\tarmac_overlay_karkand01"
+RoadTemplateTexture.SetMirror 1
+RoadTemplateTexture.SetScale 0.5/0.3
+endIf
+

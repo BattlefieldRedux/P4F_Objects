@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harbor_mainroad
+ObjectTemplate.create SimpleObject harbor_mainroad
+ObjectTemplate.geometry harbor_mainroad

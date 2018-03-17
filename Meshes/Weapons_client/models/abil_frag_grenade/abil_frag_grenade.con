@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_frag_grenade
+
+ObjectTemplate.create GenericFireArm abil_frag_grenade
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry abil_frag_grenade
+
+include abil_frag_grenade.tweak

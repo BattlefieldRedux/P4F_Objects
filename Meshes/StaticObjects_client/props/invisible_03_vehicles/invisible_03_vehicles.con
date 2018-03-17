@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh invisible_03_vehicles
+CollisionManager.createTemplate invisible_03_vehicles
+
+ObjectTemplate.create SimpleObject invisible_03_vehicles
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.collisionMesh invisible_03_vehicles
+ObjectTemplate.mapMaterial 0 Default 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry invisible_03_vehicles
+ObjectTemplate.anchor -0.3150/-0.7500/-0.4100
+
+include invisible_03_vehicles.tweak

@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - crater001 **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "crater001"
+RoadTemplate.SetWidth 15
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.91
+RoadTemplate.SetPrio 5
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\crater512"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\crater512"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/2
+endIf
+

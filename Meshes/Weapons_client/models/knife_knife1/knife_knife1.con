@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh knife_knife1
+
+ObjectTemplate.create GenericFireArm knife_knife1
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry knife_knife1
+
+include knife_knife1.tweak

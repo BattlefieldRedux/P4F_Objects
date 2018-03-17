@@ -1,0 +1,31 @@
+<!-- color tables used for the soldiers hair and skin color -->
+<colors>
+
+	<!-- skin tones ranging from darkest to brightest -->
+	<skin>
+		<c id="1">30 20 15</c>
+		<c id="2">52 34 25</c>
+		<c id="3">74 48 35</c>
+		<c id="4">98 67 46</c>
+		<c id="5">122 88 62</c>
+		<c id="6">144 104 63</c>
+		<c id="7">153 119 86</c>
+		<c id="8">159 127 98</c>
+		<c id="9">174 143 111</c>
+	</skin>
+	
+	<hair>
+		<!-- blonde -->
+		<c id="1">190 177 116</c>
+		<!-- dark brown -->
+		<c id="2">65 49 33</c>
+		<!-- red -->
+		<c id="3">132 65 41</c>
+		<!-- black -->
+		<c id="4">30 15 10</c>
+		<!-- light brown -->
+		<c id="5">98 76 54</c>
+	</hair>
+	
+</colors>
+

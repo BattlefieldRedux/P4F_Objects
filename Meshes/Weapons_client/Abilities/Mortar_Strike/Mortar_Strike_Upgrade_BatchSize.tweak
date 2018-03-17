@@ -1,0 +1,43 @@
+ObjectTemplate.activeSafe GenericAbility Mortar_Strike_Upgrade_BatchSize
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9101
+ObjectTemplate.activateOnKitPickup 1
+
+rem ObjectTemplate.createComponent HudElements
+rem ObjectTemplate.hudElements.newlyActivatedIcon Ingame\Abilities\ability2153.tga
+rem ObjectTemplate.hudElements.activeIcon Ingame\Abilities\ability2153n.tga
+rem ObjectTemplate.hudElements.newlyActivatedIconShowDuration 3
+
+rem ObjectTemplate.createComponent Duration
+rem ObjectTemplate.duration.duration 12
+
+rem ObjectTemplate.createComponent CoolDown
+rem ObjectTemplate.coolDown.coolDownTime 20
+
+rem ObjectTemplate.createComponent UseCount
+
+
+
+ObjectTemplate.createComponent UpgradeWeapon
+
+rem apply statically defined asset id(s)
+ObjectTemplate.upgradeWeapon.appliesTo UVTStaticAssetId
+
+rem enumerate the asset id of weapons we want to apply this upgrade to (could be an arbitrary amount)
+ObjectTemplate.upgradeWeapon.addApplyToAssetId 2165
+rem ObjectTemplate.upgradeWeapon.addApplyToAssetId 2166
+rem ObjectTemplate.upgradeWeapon.addApplyToAssetId 1717
+
+rem apply to dynamically defined asset id(s) (associated with weapon in database/frontend)
+rem ObjectTemplate.upgradeWeapon.appliesTo UVTDynamicAssetId
+
+rem syntax convention:
+rem ObjectTemplate.upgradeWeapon.<componentName><parameterName><Mod/Replace> <value>
+
+rem modify batch size of fire component 
+ObjectTemplate.upgradeWeapon.fireCompBatchSizeMod 3
+
+rem replace batch size of fire component
+rem ObjectTemplate.upgradeWeapon.fireCompBatchSizeReplace 10
+
+

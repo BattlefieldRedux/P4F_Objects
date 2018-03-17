@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled parellel_parking_xpack
+ObjectTemplate.create SimpleObject parellel_parking_xpack
+ObjectTemplate.geometry parellel_parking_xpack

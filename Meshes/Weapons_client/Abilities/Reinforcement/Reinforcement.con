@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Reinforcement
+ObjectTemplate.saveInSeparateFile 1
+
+include Reinforcement.tweak

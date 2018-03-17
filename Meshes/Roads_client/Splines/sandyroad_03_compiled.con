@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled sandyroad_03
+ObjectTemplate.create SimpleObject sandyroad_03
+ObjectTemplate.geometry sandyroad_03

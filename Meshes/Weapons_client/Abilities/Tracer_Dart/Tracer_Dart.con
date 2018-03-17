@@ -1,0 +1,279 @@
+rem M9 Pistol
+rem Weapon CON File for PISTOL_M9_Default (3006)
+
+
+ObjectTemplate.create GenericFireArm Tracer_Dart
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 2168
+ObjectTemplate.geometry Abil_tracerdartgun
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\TracerDartGun\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\TracerDartGun\AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2168.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2168.tga
+rem ObjectTemplate.weaponHud.notSelectedIcon Ingame\Weapons\weapon3011n.tga
+ObjectTemplate.weaponHud.guiIndex 6
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 1
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_PISTOL_M9_DEFAULT
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_2168"
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 75
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+ObjectTemplate.fire.projectileStartPositionStand 0/0/0
+ObjectTemplate.fire.projectileStartPositionCrouch 0/0/0
+ObjectTemplate.fire.maxProjectilesInWorld 10
+ObjectTemplate.fire.busyUntilButtonRelease 0
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+ObjectTemplate.fire.fireCompleteDelay 0
+ObjectTemplate.fire.criticalHitChance 0
+ObjectTemplate.fire.criticalHitDamage 0
+ObjectTemplate.fire.allowZoomOnRof 1
+
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 3
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 5
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 0
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.autoReload 0
+
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.goBackOnRecoil 0
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.8/0.5/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.1/0.1/0
+ObjectTemplate.recoil.zoomModifier 0.5
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.setFireDev 0 0 0 0
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+ObjectTemplate.deviation.devModStand 0
+ObjectTemplate.deviation.devModCrouch 0
+ObjectTemplate.deviation.devModZoom 0
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.1
+ObjectTemplate.zoom.addZoomFactor 0
+ObjectTemplate.zoom.addZoomFactor 0.8
+ObjectTemplate.zoom.zoomedWeaponRenderFOV 0.7
+
+ObjectTemplate.addTemplate e_muzz_handgunSilenced
+ObjectTemplate.setPosition 0/0.06085/0.37927
+
+
+ObjectTemplate.projectileTemplate Tracer_Dart_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 300
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITTnT
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 0
+
+
+ObjectTemplate.create GenericProjectile Tracer_Dart_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_keg_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 100
+ObjectTemplate.armor.defaultMaterial 90
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.canBeRepaired 1
+
+
+ObjectTemplate.createComponent StickyCollisionComp
+ObjectTemplate.collision.maxStickAngle 180
+ObjectTemplate.collision.bouncing 1
+ObjectTemplate.collision.isTracerDart 1
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.drag 1
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.85
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 73
+
+ObjectTemplate.addTemplate e_Ability_Tracer_Dart
+
+ObjectTemplate.timeToLive CRD_NONE/15/0/0
+ObjectTemplate.material 73
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 1
+ObjectTemplate.mediumMinDamage 1
+ObjectTemplate.longMinDamage 1
+ObjectTemplate.initialMaxDamage 1
+ObjectTemplate.mediumMaxDamage 1
+ObjectTemplate.longMaxDamage 1
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+ObjectTemplate.damageOwner 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.activeDefenseEnabled 1
+
+rem ObjectTemplate.activeSafe Sound S_PISTOL_M9_Default_Fire3P
+rem ObjectTemplate.soundFilename "Sound\West\Weaponry\Handheld\GAD_TRACER\92fs_fire_1p_outdoor.wav"
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_TRACER\GAD_TRACER_Fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_TRACER\GAD_TRACER_Fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_Reload1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_TRACER\GAD_TRACER_Reload1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\GAD_TRACER\GAD_TRACER_Reload1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Arm_3P.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_Tracer_dart_IdleMale1
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_SMG.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_Tracer_Dart_IdleMale2
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_SMG.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

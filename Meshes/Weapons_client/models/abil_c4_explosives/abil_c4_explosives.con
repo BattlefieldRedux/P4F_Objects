@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh abil_c4_explosives
+CollisionManager.createTemplate abil_c4_explosives
+
+ObjectTemplate.create GenericFireArm abil_c4_explosives
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.collisionMesh abil_c4_explosives
+ObjectTemplate.mapMaterial 0 c4material 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry abil_c4_explosives
+
+include abil_c4_explosives.tweak

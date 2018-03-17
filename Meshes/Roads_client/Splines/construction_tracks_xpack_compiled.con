@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled construction_tracks_xpack
+ObjectTemplate.create SimpleObject construction_tracks_xpack
+ObjectTemplate.geometry construction_tracks_xpack

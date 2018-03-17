@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled Crater_Huge
+ObjectTemplate.create SimpleObject Crater_Huge
+ObjectTemplate.geometry Crater_Huge

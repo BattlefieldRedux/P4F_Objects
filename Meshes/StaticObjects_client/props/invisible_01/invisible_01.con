@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh invisible_01
+CollisionManager.createTemplate invisible_01
+
+ObjectTemplate.create SimpleObject invisible_01
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-MAKESSON1:makesson
+ObjectTemplate.collisionMesh invisible_01
+ObjectTemplate.mapMaterial 0 Default 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry invisible_01
+ObjectTemplate.anchor -0.3150/-0.7500/-0.4100
+
+include invisible_01.tweak

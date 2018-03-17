@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - crater_scorch **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "crater_scorch"
+RoadTemplate.SetWidth 20
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 1
+RoadTemplate.SetPrio 3
+RoadTemplate.SetMaterial Gravel
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\crater_scorch"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\crater_scorch"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/0.5
+endIf
+

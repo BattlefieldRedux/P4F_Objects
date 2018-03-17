@@ -1,0 +1,4 @@
+ObjectTemplate.create RemoteControlledObject TitanControlObjectPAC
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.rcType RCTitan
+ObjectTemplate.minTimeBetweenActivation 5

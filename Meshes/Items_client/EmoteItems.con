@@ -1,0 +1,375 @@
+ObjectTemplate.create KitPart Emote
+
+rem ---------- Wave 
+ObjectTemplate.create ItemContainer Item_Emote_01
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5000
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote --
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5000"
+rem ---EndComp ---
+
+rem ---------- Angry 
+ObjectTemplate.create ItemContainer Item_Emote_02
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5001
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5001"
+rem ---EndComp ---
+
+rem ---------- Cheer
+ObjectTemplate.create ItemContainer Item_Emote_03
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5002
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5002"
+rem ---EndComp ---
+
+rem ---------- Yes
+ObjectTemplate.create ItemContainer Item_Emote_04
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5003
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5003"
+rem ---EndComp ---
+
+rem ---------- No
+ObjectTemplate.create ItemContainer Item_Emote_05
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5004
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5004"
+rem ---EndComp ---
+
+rem ---------- Laugh
+ObjectTemplate.create ItemContainer Item_Emote_06
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5005
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5005"
+rem ---EndComp ---
+
+rem ---------- Thanks
+ObjectTemplate.create ItemContainer Item_Emote_07
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5006
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5006"
+rem ---EndComp ---
+
+rem ---------- Medic
+ObjectTemplate.create ItemContainer Item_Emote_08
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5007
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5007"
+rem ObjectTemplate.emoteHud.channel TCTeam
+rem ---EndComp ---
+
+rem ---------- Taunt
+ObjectTemplate.create ItemContainer Item_Emote_09
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5008
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5008"
+rem ---EndComp ---
+
+rem ---------- Beat chest
+ObjectTemplate.create ItemContainer Item_Emote_10
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5009
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5009"
+rem ---EndComp ---
+
+rem ---------- Throat cut
+ObjectTemplate.create ItemContainer Item_Emote_11
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5010
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5010"
+rem ---EndComp ---
+
+rem ---------- Robot
+ObjectTemplate.create ItemContainer Item_Emote_12
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5011
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5011"
+rem ---EndComp ---
+
+rem ---------- Chicken
+ObjectTemplate.create ItemContainer Item_Emote_13
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5012
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5012"
+rem ---EndComp ---
+
+rem ---------- Cup ear
+ObjectTemplate.create ItemContainer Item_Emote_14
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5013
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5013"
+rem ---EndComp ---
+
+rem ---------- Sweaty forehead
+ObjectTemplate.create ItemContainer Item_Emote_15
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5014
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5014"
+rem ---EndComp ---
+
+rem ---------- Flex
+ObjectTemplate.create ItemContainer Item_Emote_16
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5015
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5015"
+rem ---EndComp ---
+
+rem ---------- I Need a Ride
+ObjectTemplate.create ItemContainer Item_Emote_17
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5016
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5016"
+rem ObjectTemplate.emoteHud.channel TCTeam
+rem ---EndComp ---
+
+rem ---------- Incoming
+ObjectTemplate.create ItemContainer Item_Emote_18
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5017
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5017"
+rem ObjectTemplate.emoteHud.channel TCTeam
+rem ---EndComp ---
+
+rem ---------- dustoff
+ObjectTemplate.create ItemContainer Item_Emote_24
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5023
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5023"
+rem ---EndComp ---
+
+rem ---------- airplane
+ObjectTemplate.create ItemContainer Item_Emote_25
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5024
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5024"
+rem ---EndComp ---
+
+rem ---------- facepalm
+ObjectTemplate.create ItemContainer Item_Emote_26
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5025
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5025"
+rem ---EndComp ---
+
+rem ---------- usehead
+ObjectTemplate.create ItemContainer Item_Emote_27
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5026
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5026"
+rem ---EndComp ---
+
+rem ---------- dunno
+ObjectTemplate.create ItemContainer Item_Emote_28
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5027
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5027"
+rem ---EndComp ---
+
+rem ---------- kyokushin
+ObjectTemplate.create ItemContainer Item_Emote_29
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5028
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5028"
+rem ---EndComp ---
+
+rem ---------- ThumbsDown
+ObjectTemplate.create ItemContainer Item_Emote_30
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5029
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5029"
+rem ---EndComp ---
+
+rem ---------- Wolfman
+ObjectTemplate.create ItemContainer Item_Emote_31
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5030
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5030"
+rem ---EndComp ---
+
+rem ---------- Lugosi
+ObjectTemplate.create ItemContainer Item_Emote_32
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5031
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5031"
+rem ---EndComp ---
+
+rem ---------- Goal
+ObjectTemplate.create ItemContainer Item_Emote_33
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5032
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5032"
+rem ---EndComp ---
+
+rem ---------- Close
+ObjectTemplate.create ItemContainer Item_Emote_34
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5033
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5033"
+rem ---EndComp ---
+
+rem ---------- Redcard
+ObjectTemplate.create ItemContainer Item_Emote_35
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5034
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5034"
+rem ---EndComp ---
+
+rem ---------- Trumpet
+ObjectTemplate.create ItemContainer Item_Emote_36
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5035
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5035"
+rem ---EndComp ---
+
+rem ---------- Congas
+ObjectTemplate.create ItemContainer Item_Emote_37
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5036
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5036"
+rem ---EndComp ---
+
+rem ---------- Tuba
+ObjectTemplate.create ItemContainer Item_Emote_38
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5037
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5037"
+rem ---EndComp ---
+
+rem ---------- Guitar
+ObjectTemplate.create ItemContainer Item_Emote_39
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5038
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5038"
+rem ---EndComp ---
+
+rem ---------- Bass
+ObjectTemplate.create ItemContainer Item_Emote_40
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5039
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5039"
+rem ---EndComp ---
+
+rem ---------- Shave
+ObjectTemplate.create ItemContainer Item_Emote_41
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5040
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5040"
+rem ---EndComp ---
+
+rem ---------- Gunsmoke
+ObjectTemplate.create ItemContainer Item_Emote_42
+ObjectTemplate.type ICEmoteItem
+ObjectTemplate.customId 5041
+ObjectTemplate.addTemplate Emote
+rem ---BeginComp:Emote ---
+ObjectTemplate.createComponent EmoteHud
+ObjectTemplate.emoteHud.trigger "WEST_Custom_Item_5041"
+rem ---EndComp ---
+

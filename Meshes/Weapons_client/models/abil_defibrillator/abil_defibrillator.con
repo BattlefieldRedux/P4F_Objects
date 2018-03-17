@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_defibrillator
+
+ObjectTemplate.create GenericFireArm abil_defibrillator
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.geometry abil_defibrillator
+
+include abil_defibrillator.tweak

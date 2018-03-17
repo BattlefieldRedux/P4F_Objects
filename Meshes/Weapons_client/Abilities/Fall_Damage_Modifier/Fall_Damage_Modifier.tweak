@@ -1,0 +1,9 @@
+ObjectTemplate.activeSafe GenericAbility Fall_Damage_Modifier
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9999
+ObjectTemplate.activateOnKitPickup 1
+
+ObjectTemplate.createComponent FallDamageModifier
+ObjectTemplate.fallDamageModifier.fallDamageMod 5
+
+

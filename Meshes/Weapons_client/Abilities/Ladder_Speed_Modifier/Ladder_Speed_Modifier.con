@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericAbility Ladder_Speed_Modifier
+ObjectTemplate.saveInSeparateFile 1
+
+include Ladder_Speed_Modifier.tweak

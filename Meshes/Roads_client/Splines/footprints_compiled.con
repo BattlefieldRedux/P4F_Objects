@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled footprints
+ObjectTemplate.create SimpleObject footprints
+ObjectTemplate.geometry footprints

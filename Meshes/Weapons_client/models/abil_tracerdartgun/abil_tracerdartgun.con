@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh abil_tracerdartgun
+
+ObjectTemplate.create GenericFireArm abil_tracerdartgun
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.geometry abil_tracerdartgun
+
+include abil_tracerdartgun.tweak

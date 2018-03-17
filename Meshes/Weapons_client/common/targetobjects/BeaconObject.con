@@ -1,0 +1,5 @@
+ObjectTemplate.create TargetObject BeaconObject
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTBeacon
+ObjectTemplate.disableWhenWreck 0

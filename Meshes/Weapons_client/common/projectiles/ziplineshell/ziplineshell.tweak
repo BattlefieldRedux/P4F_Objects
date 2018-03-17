@@ -1,0 +1,54 @@
+rem *** Generated with Bf2Editor.exe [created: 2003/10/21 13:57]
+ObjectTemplate.active ziplineshell
+ObjectTemplate.createComponent DefaultCollisionComp
+
+rem ---BeginComp:DefaultDetonationComp ---
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 70
+ObjectTemplate.detonation.explosionRadius 0
+ObjectTemplate.detonation.explosionForce 0
+ObjectTemplate.detonation.explosionDamage 0
+rem ObjectTemplate.detonation.endEffectTemplate e_exp_large
+ObjectTemplate.detonation.useMMOnEndEffect 1
+rem ---EndComp ---
+
+ObjectTemplate.createComponent DefaultRicochetComp
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.createComponent DefaultProjSoundComp
+ObjectTemplate.creator DSU-1:dsu
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.geometry shell_m203
+rem ObjectTemplate.collisionMesh shell_m203
+ObjectTemplate.mapMaterial 0 Grenade_rifle 0
+
+rem - temporary tracer effect until real one gets added
+ObjectTemplate.tracerScaler 30
+ObjectTemplate.maxTracerScaler 30
+ObjectTemplate.tracerSizeModifier 10
+rem ObjectTemplate.tracerTemplate p_tracer_zipline
+ObjectTemplate.tracerInterval 1
+ObjectTemplate.tracerConvergeDistance 50
+ObjectTemplate.minTracerScaler 30
+
+rem  -- JN ---
+ObjectTemplate.mass 2
+ObjectTemplate.gravityModifier 0.1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.material 52
+rem  -- JN ---
+
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.hasResponsePhysics 1
+ObjectTemplate.collisionGroups 8
+rem -------------------------------------
+rem ObjectTemplate.addTemplate e_rifgrenade_trail
+rem ObjectTemplate.setPosition 0/0/-0.01682
+rem -------------------------------------
+ObjectTemplate.timeToLive CRD_UNIFORM/3/0/0
+ObjectTemplate.material -1
+
+ObjectTemplate.active S_shell_m203_Looping

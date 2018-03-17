@@ -1,0 +1,358 @@
+rem RPG 7
+rem Weapon CON File for RPG_RPG7_default (3009)
+
+ObjectTemplate.create GenericFireArm RPG_RPG7_default
+ObjectTemplate.assetId 3009
+ObjectTemplate.saveInSeparateFile 1
+
+ObjectTemplate.geometry at_rpg
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\AT_RPG\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\AT_RPG\AnimationSystem3p.inc
+rem ObjectTemplate.AnimationSystem3PFemale FemaleAnimation
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Weapons\weapon3009.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Weapons\weapon3009.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Weapons\weapon3009n.tga
+ObjectTemplate.weaponHud.guiIndex 1
+ObjectTemplate.weaponHud.altGuiIndex 10
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 1
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_RPG_RPG7_DEFAULT
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "Assault_Custom_Item_3009"
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 45
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+ObjectTemplate.fire.projectileStartPositionStand 0/0/0
+ObjectTemplate.fire.projectileStartPositionCrouch 0/0/0
+ObjectTemplate.fire.maxProjectilesInWorld 1
+ObjectTemplate.fire.busyUntilButtonRelease 0
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+ObjectTemplate.fire.fireInCameraDof 1
+ObjectTemplate.fire.fireCompleteDelay 0
+ObjectTemplate.fire.fireOnEnable 0
+ObjectTemplate.fire.criticalHitChance 0
+ObjectTemplate.fire.criticalHitDamage 0
+
+ObjectTemplate.fire.allowZoomOnRof 1
+
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags 2
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadAmount 0
+ObjectTemplate.ammo.reloadTime 6.5
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 0
+ObjectTemplate.ammo.reloadWithoutPlayer 0
+ObjectTemplate.ammo.autoReload 0
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+ObjectTemplate.ammo.AllowReplenish 1
+
+ObjectTemplate.createComponent SoldierBasedRecoilComp
+ObjectTemplate.recoil.hasRecoilForce 1
+ObjectTemplate.recoil.goBackOnRecoil 0
+ObjectTemplate.recoil.recoilForceUp CRD_UNIFORM/0.8/1.5/0
+ObjectTemplate.recoil.recoilForceLeftRight CRD_UNIFORM/-0.45/0.45/0
+ObjectTemplate.recoil.recoilGraphFrameCount 2
+ObjectTemplate.recoil.recoilGraphExponent 6
+ObjectTemplate.recoil.recoilGraphTotalMovement 0.6
+ObjectTemplate.recoil.zoomModifier 1
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 10
+ObjectTemplate.deviation.subProjectileDev 0
+ObjectTemplate.deviation.DevModZoom 0.01
+ObjectTemplate.deviation.minDevModZoom 0.05
+ObjectTemplate.deviation.setFireDev 0 0 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 10 10 0
+ObjectTemplate.deviation.devModStand 1
+ObjectTemplate.deviation.devModCrouch 1
+ObjectTemplate.deviation.syncDev 1
+
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+
+
+
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.2
+ObjectTemplate.zoom.zoomLod 0
+ObjectTemplate.zoom.applyDoFOnZoom 0
+ObjectTemplate.zoom.hideOnZoom 1
+ObjectTemplate.zoom.zoomOutAfterFire 0
+ObjectTemplate.zoom.addZoomFactor 0 0
+ObjectTemplate.zoom.addZoomFactor 0.8 0
+ObjectTemplate.zoom.disableMuzzleWhenZoomed 1
+ObjectTemplate.zoom.useZoomFineTuning 0
+ObjectTemplate.zoom.zoomFineTuneSteps 10
+
+
+rem --------------------- Added to turn this into a heat seeking missile ---------------------
+ObjectTemplate.createComponent MultiFireArmTargetComp
+ObjectTemplate.target.maxDistance 375
+ObjectTemplate.target.targetSystem TSHeatSeeking
+ObjectTemplate.target.lockDelay 1
+ObjectTemplate.target.loseLockDelay 0.5
+ObjectTemplate.target.lockAngle 360
+
+rem -------------------------------------------------------------------------------------------
+
+
+
+ObjectTemplate.addTemplate e_muzz_rpg7
+ObjectTemplate.setPosition 0/-0.00313/-0.3
+
+
+ObjectTemplate.addTemplate e_shellejection_tunguska
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.setRotation 0/0/0
+
+ObjectTemplate.projectileTemplate RPG_RPG7_default_Projectile
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.velocity 55
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.65
+ObjectTemplate.weaponsItemType WITAntiTank
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 0
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 1
+ObjectTemplate.unstealthOnDeploy 0
+
+
+ObjectTemplate.create GenericProjectile RPG_RPG7_default_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_tow_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+ObjectTemplate.collision.bouncing 0
+
+
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 52
+ObjectTemplate.detonation.explosionRadius 5
+ObjectTemplate.detonation.explosionForce 3
+ObjectTemplate.detonation.explosionDamage 60
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.canPickup 1
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+rem -------------------- Added to turn this into a heat seeking missile ----------------------
+rem ---BeginComp:SeekClosestTargetComp ---
+ObjectTemplate.createComponent SeekClosestTargetComp
+ObjectTemplate.seek.targetType TTTracerDart
+ObjectTemplate.seek.trackingDelay 0.2
+ObjectTemplate.seek.maxAngleLock 360
+ObjectTemplate.seek.maxDistLock 375
+ObjectTemplate.seek.directionBonus 0.8
+ObjectTemplate.seek.reLockTime 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultFollowComp ---
+ObjectTemplate.createComponent DefaultFollowComp
+ObjectTemplate.follow.maxYaw 3
+ObjectTemplate.follow.maxPitch 3
+ObjectTemplate.follow.changePitch 1
+ObjectTemplate.follow.changeYaw 1
+ObjectTemplate.follow.minDist 10
+ObjectTemplate.follow.magneticBehaviour 1
+ObjectTemplate.follow.predictionFactor 0.5
+ObjectTemplate.follow.useTargetSpeed 1
+ObjectTemplate.follow.speedModifier 1.1
+ObjectTemplate.follow.armingSpeed 0
+ObjectTemplate.follow.targetActivation 1
+ObjectTemplate.follow.followTime 2.5
+rem ---EndComp ---
+rem -------------------------------------------------------------------------------------------
+
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry rpg_rocket
+ObjectTemplate.setCollisionMesh rpg_rocket
+ObjectTemplate.mapMaterial 52 Metal 0
+ObjectTemplate.drag 0
+ObjectTemplate.mass 0
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.08
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 52
+
+
+ObjectTemplate.addTemplate e_tow_trail
+
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 52
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 300
+ObjectTemplate.mediumMinDamage 300
+ObjectTemplate.longMinDamage 300
+ObjectTemplate.initialMaxDamage 300
+ObjectTemplate.mediumMaxDamage 300
+ObjectTemplate.longMaxDamage 300
+ObjectTemplate.mediumDistance 40
+ObjectTemplate.longDistance 50
+ObjectTemplate.damageOwner 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.maxSpeed 35
+ObjectTemplate.startDelay 0.2
+ObjectTemplate.activeDefenseEnabled 1
+
+rem ------------ Added to turn this into a heat seeking missile (yeah, won't work without this) ------------
+ObjectTemplate.acceleration 50
+rem --------------------------------------------------------------------------------------------------------
+
+
+rem ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Fire3P
+rem ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_fire_3p.wav"
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Fire1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_fire_1p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_fire_3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 10
+ObjectTemplate.halfVolumeDistance 30
+ObjectTemplate.soundRadius 0.5
+
+
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Reload1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_reload_1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_reload_1p3p.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Deploy1P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_deploy_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\Assault\Weaponry\Handheld\RPG_RPG7\RPG_RPG7_deploy_1p3p.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_RPG_RPG7_default_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+

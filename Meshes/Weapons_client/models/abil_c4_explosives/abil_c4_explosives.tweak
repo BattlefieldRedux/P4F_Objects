@@ -1,0 +1,26 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/10/5 11:57]
+GeometryTemplate.maxSkip3pLods 2
+GeometryTemplate.setSubGeometryLodDistance 1 0 4
+GeometryTemplate.setSubGeometryLodDistance 1 1 7
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe GenericFireArm abil_c4_explosives
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.modifiedByUser "dmod"
+rem ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry abil_c4_explosives
+ObjectTemplate.setCollisionMesh abil_c4_explosives
+ObjectTemplate.mapMaterial 0 c4material 80
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+rem -------------------------------------
+ObjectTemplate.addTemplate S_abil_c4_explosives_Start
+rem -------------------------------------
+ObjectTemplate.keepProjectiles 5
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.disableOutsideVehicle 0
+ObjectTemplate.allowInParachute 1
+
+ObjectTemplate.activeSafe Sound S_abil_c4_explosives_Start
+

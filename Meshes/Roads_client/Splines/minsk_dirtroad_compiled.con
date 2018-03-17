@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled minsk_dirtroad
+ObjectTemplate.create SimpleObject minsk_dirtroad
+ObjectTemplate.geometry minsk_dirtroad

@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled dashedlines_roads_xpack
+ObjectTemplate.create SimpleObject dashedlines_roads_xpack
+ObjectTemplate.geometry dashedlines_roads_xpack

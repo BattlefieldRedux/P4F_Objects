@@ -1,0 +1,7 @@
+ObjectTemplate.create TargetObject MagneticObject
+ObjectTemplate.timeToLive 0
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.targetType TTMagnet
+ObjectTemplate.disableWhenEmptyVehicle 1
+ObjectTemplate.disableWhenEmptyVehicleDelay 3
+ObjectTemplate.disableWhenWreck 0

@@ -1,0 +1,5 @@
+GeometryTemplate.create SoldierMeshItem Character3p_Accfront002
+geometryTemplate.itemType CIT_Accfront
+
+ObjectTemplate.create KitPart Character3p_Accfront002
+ObjectTemplate.geometry Character3p_Accfront002

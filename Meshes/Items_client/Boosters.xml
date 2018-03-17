@@ -1,0 +1,46 @@
+<boosters>
+	<!-- XP Booster (+50%) -->
+	<item id="9000">
+		<name>XPBooster</name>
+		<values>
+			<mod>0.50</mod>
+		</values>
+		<minLevel>1</minLevel>
+	</item>
+	
+	<!-- Valor Points Booster (+100%) -->
+	<item id="9005">
+		<name>VPBooster</name>
+		<values>
+			<mod>1.0</mod>
+		</values>
+		<minLevel>1</minLevel>
+	</item>
+
+	<!-- PP Booster (+50%) -->
+	<item id="9010">
+		<name>PPBooster</name>
+		<values>
+			<mod>0.50</mod>
+		</values>
+		<minLevel>1</minLevel>
+	</item>
+	
+	<item id="9020">  <!-- Item_FireProofPants -->
+		<consumable>true</consumable>
+	</item>
+
+	<item id="9040">  <!-- Item_IncreaseHPLimit -->
+		<consumable>false</consumable>
+	</item>
+
+	<item id="9101">  <!-- Item_Mortar_Strike_Upgrade_BatchSize -->
+		<consumable>false</consumable>
+	</item>
+
+
+	<item id="9102">  <!-- Item_Mortar_Strike_Upgrade_CoolDown -->
+		<consumable>false</consumable>
+	</item>
+
+</boosters>

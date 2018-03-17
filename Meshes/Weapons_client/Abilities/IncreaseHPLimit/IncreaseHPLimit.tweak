@@ -1,0 +1,8 @@
+ObjectTemplate.activeSafe GenericAbility IncreaseHPLimit
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 9040
+
+ObjectTemplate.createComponent StatModifier
+ObjectTemplate.abilityComp.name IncreaseHPLimit
+ObjectTemplate.statModifier.value 10
+ObjectTemplate.statModifier.operation Add

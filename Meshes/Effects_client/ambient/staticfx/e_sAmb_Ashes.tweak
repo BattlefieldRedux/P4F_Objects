@@ -1,0 +1,93 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/9/17 11:15]
+ObjectTemplate.activeSafe EffectBundle e_sAmb_Ashes
+ObjectTemplate.modifiedByUser "pwallo"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_sAmb_Ashes_Start
+ObjectTemplate.addTemplate e_sAmb_Ashes_EvilAshes
+ObjectTemplate.setPosition 0/0.934589/0
+rem -------------------------------------
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+ObjectTemplate.activeSafe Sound S_e_sAmb_Ashes_Start
+
+ObjectTemplate.create SpriteParticleSystem e_sAmb_Ashes_EvilAshes
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.showInFirstPerson 1
+ObjectTemplate.showInThirdPerson 1
+ObjectTemplate.showInZoomedMode 1
+ObjectTemplate.emitPrio Low
+ObjectTemplate.lodDistance Low
+ObjectTemplate.qualityLevel High
+ObjectTemplate.emitterType Standard
+ObjectTemplate.isLocalSystem 0
+ObjectTemplate.noRotationFromParent 0
+ObjectTemplate.emitRadius 1/0/1
+ObjectTemplate.emitRangeX CRD_NORMAL/0/0/0
+ObjectTemplate.emitRangeY CRD_NONE/0/0/0
+ObjectTemplate.emitRangeZ CRD_NONE/0/0/0
+ObjectTemplate.randomRadialDirection 360
+ObjectTemplate.radialDirection 360
+ObjectTemplate.emitFrequency 10
+ObjectTemplate.preWarmTime 0
+ObjectTemplate.emitTime 0
+ObjectTemplate.emitDelay 0
+ObjectTemplate.isLooping 0
+ObjectTemplate.emitSpeed 1
+ObjectTemplate.emitDirection 0.402739/0/0.915315
+ObjectTemplate.timeToLive 15
+ObjectTemplate.randomTimeToLive 0
+ObjectTemplate.windAffectionFactor 1
+ObjectTemplate.forceToWaterSurface 0
+ObjectTemplate.waterSurfaceOffset 0.03
+ObjectTemplate.rotationGraph 0/-0.12/0/1
+ObjectTemplate.alignRotationToSpeed 1
+ObjectTemplate.transparencyGraph 0/-12.1/6.4/0.5
+ObjectTemplate.gravity -0.15
+ObjectTemplate.gravityGraph 0/0/0/1
+ObjectTemplate.airResistanceGraph 0/0/0/1
+ObjectTemplate.emitSpeedGraph -0.36/0.2/0/1
+ObjectTemplate.randomSpeed 0.65
+ObjectTemplate.randomDirectionAngle 10/45/0
+ObjectTemplate.airResistance 0
+ObjectTemplate.collisionEnable 1
+ObjectTemplate.collisionSpeedAlongNormal 0.2
+ObjectTemplate.collisionSpeedAlongPlane 0.2
+ObjectTemplate.randomSize 0
+ObjectTemplate.particleMaxSize 0.03
+ObjectTemplate.sizeGraph 0/0/0.01/0.5
+ObjectTemplate.randomIntensity 0
+ObjectTemplate.lightMapIntensityOffset 0
+ObjectTemplate.color1 0.333333/0.25098/0.168627
+ObjectTemplate.color2 0.541176/0.537255/0.458824
+ObjectTemplate.colorBlendGraph 0/0/-0.03/0.79
+ObjectTemplate.alphaCull 0.1
+ObjectTemplate.particleType Sorted
+ObjectTemplate.drawOrder Front
+ObjectTemplate.randomRotation 0.35
+ObjectTemplate.randomRotationSpeed 0.5
+ObjectTemplate.rotationSpeed 0.45
+ObjectTemplate.pivotOffset 0/0
+ObjectTemplate.selfShadowIntensity 0
+ObjectTemplate.particleShaderType 0
+ObjectTemplate.textureName objects\effects\textures\ashes
+ObjectTemplate.animationEnable 0
+ObjectTemplate.animationSpeed 1
+ObjectTemplate.animationPlayOnce 0
+ObjectTemplate.setAnimationFrameWidthRelative 0
+ObjectTemplate.setAnimationFrameHeightRelative 0
+ObjectTemplate.animationRandomizedStartFrame 0
+ObjectTemplate.animationFrameCount 0
+ObjectTemplate.animationFrameCountX 0
+ObjectTemplate.nearCullingEnable 1
+
+
+

@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh ar_ak74
+
+ObjectTemplate.create GenericFireArm ar_ak74
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.geometry ar_ak74
+
+include ar_ak74.tweak

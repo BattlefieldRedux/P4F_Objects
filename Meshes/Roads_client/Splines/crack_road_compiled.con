@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled crack_road
+ObjectTemplate.create SimpleObject crack_road
+ObjectTemplate.geometry crack_road

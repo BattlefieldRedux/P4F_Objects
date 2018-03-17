@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled harborpark_darker
+ObjectTemplate.create SimpleObject harborpark_darker
+ObjectTemplate.geometry harborpark_darker

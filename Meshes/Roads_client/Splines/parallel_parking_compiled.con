@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled parallel_parking
+ObjectTemplate.create SimpleObject parallel_parking
+ObjectTemplate.geometry parallel_parking

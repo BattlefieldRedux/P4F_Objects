@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled refugee_asphalt
+ObjectTemplate.create SimpleObject refugee_asphalt
+ObjectTemplate.geometry refugee_asphalt

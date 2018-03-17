@@ -1,0 +1,9 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/2/8 11:15]
+ObjectTemplate.activeSafe PlayerControlObject ObjectiveSmoke
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 0
+ObjectTemplate.physicsType None
+rem -------------------------------------
+ObjectTemplate.addTemplate e_sAmb_ObjectiveSmoke
+rem -------------------------------------

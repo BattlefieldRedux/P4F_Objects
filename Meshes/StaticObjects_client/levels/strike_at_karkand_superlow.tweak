@@ -1,0 +1,16 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/11/8 16:58]
+GeometryTemplate.maxSkip3pLods 2
+GeometryTemplate.setSubGeometryLodDistance 0 0 0
+GeometryTemplate.setSubGeometryLodDistance 0 1 0
+GeometryTemplate.doNotGenerateLightmaps 0
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.isSuperLowTerrain 1
+ObjectTemplate.activeSafe SimpleObject strike_at_karkand_superlow
+ObjectTemplate.creator DICE-PSMEDJEBAC:psmedjeback
+ObjectTemplate.modifiedByUser "psmedjeback"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry strike_at_karkand_superlow
+ObjectTemplate.hasMobilePhysics 0
+

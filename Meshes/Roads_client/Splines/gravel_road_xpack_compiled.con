@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled gravel_road_xpack
+ObjectTemplate.create SimpleObject gravel_road_xpack
+ObjectTemplate.geometry gravel_road_xpack

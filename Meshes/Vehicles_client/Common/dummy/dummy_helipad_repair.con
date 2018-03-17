@@ -1,0 +1,6 @@
+ObjectTemplate.create Bundle dummy_helipad_repair
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry connector
+ObjectTemplate.anchor 0/0.0427/0
+
+include dummy_helipad_repair.tweak

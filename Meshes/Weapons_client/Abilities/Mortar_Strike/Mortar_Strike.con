@@ -1,0 +1,270 @@
+rem Tracer Dart
+rem Weapon CON File for Tracer_Dart (3005)
+
+
+ObjectTemplate.create GenericFireArm Mortar_Strike
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry abil_Binic
+ObjectTemplate.assetId 2165
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\Binic\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\Binic\AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2165.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2165.tga
+rem ObjectTemplate.weaponHud.notSelectedIcon Ingame\Weapons\weapon3013n.tga
+ObjectTemplate.weaponHud.guiIndex 14
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 1
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_BRI_SRIFLE_DEFAULT
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "Assault_Custom_Item_2165"
+
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate Mortar_Strike
+ObjectTemplate.ability.coolDownPersistentThroughDeath 1
+ObjectTemplate.ability.hideDurationProgressBar 1
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 500
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 4
+ObjectTemplate.fire.setProjectileSpawnFromAbove 300 200
+ObjectTemplate.fire.projectileStartPositionStand 0/0.47/0
+ObjectTemplate.fire.projectileStartPositionCrouch 0/-0.05/0
+ObjectTemplate.fire.maxProjectilesInWorld 50
+ObjectTemplate.fire.busyUntilButtonRelease 1
+ObjectTemplate.fire.alwaysFireFromWeapon 0
+ObjectTemplate.fire.fireCompleteDelay 0
+ObjectTemplate.fire.criticalHitChance 0.06
+ObjectTemplate.fire.criticalHitDamage 15
+ObjectTemplate.fire.allowZoomOnRof 1
+ObjectTemplate.fire.onlyFireWhenZoomed 1
+
+ObjectTemplate.createComponent DefaultAmmoComp
+ObjectTemplate.ammo.ammoType 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.usageInterval 40
+ObjectTemplate.ammo.reloadTime 40
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 0
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.autoReload 0
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 1
+ObjectTemplate.deviation.subProjectileDev 4
+ObjectTemplate.deviation.minDevModZoom 0
+ObjectTemplate.deviation.setFireDev 0 0 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+ObjectTemplate.zoom.zoomDelay 0.08
+ObjectTemplate.zoom.zoomLod 1
+ObjectTemplate.zoom.addZoomFactor 0.3 0
+ObjectTemplate.zoom.disableMuzzleWhenZoomed True
+ObjectTemplate.zoom.useZoomFineTuning False
+ObjectTemplate.zoom.zoomFineTuneSteps 10
+ObjectTemplate.zoom.hideOnZoom 1
+
+ObjectTemplate.addTemplate e_muzz_sniper
+ObjectTemplate.setPosition 0/0.07239/0.98468
+
+ObjectTemplate.createComponent ChargeupComp
+ObjectTemplate.chargeup.chargeupTime 3
+ObjectTemplate.chargeup.maxLookAngleDuringChargeup 0.9995
+ObjectTemplate.chargeup.maxMovementDuringChargeup .1
+
+
+ObjectTemplate.projectileTemplate Mortar_Strike_Projectile
+ObjectTemplate.keepProjectiles 10
+ObjectTemplate.velocity 70
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITAntiTank
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 0
+ObjectTemplate.inheritParentSpeedVehicle 0
+ObjectTemplate.isDefaultWeapon 1
+ObjectTemplate.unstealthOnDeploy 0
+ObjectTemplate.maxDistance 120
+
+ObjectTemplate.create GenericProjectile Mortar_Strike_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.addTemplate e_ATRocket_trail
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+
+ObjectTemplate.createComponent DefaultCollisionComp
+ObjectTemplate.collision.hasCollisionEffect 1
+ObjectTemplate.collision.bouncing 0
+
+
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 52
+ObjectTemplate.detonation.explosionRadius 20
+ObjectTemplate.detonation.explosionForce 100
+ObjectTemplate.detonation.explosionDamage 50
+ObjectTemplate.detonation.endEffectTemplate e_exp_small
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.canPickup 1
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry cannon_ammo
+ObjectTemplate.setCollisionMesh cannon_ammo
+ObjectTemplate.mapMaterial 52 Metal 0
+ObjectTemplate.drag 7
+ObjectTemplate.mass 10
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.25
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Point
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 52
+
+
+ObjectTemplate.addTemplate e_ATRocket_trail
+
+ObjectTemplate.timeToLive CRD_NONE/10/0/0
+ObjectTemplate.material 52
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 200
+ObjectTemplate.mediumMinDamage 200
+ObjectTemplate.longMinDamage 200
+ObjectTemplate.initialMaxDamage 200
+ObjectTemplate.mediumMaxDamage 200
+ObjectTemplate.longMaxDamage 200
+ObjectTemplate.mediumDistance 40
+ObjectTemplate.longDistance 50
+ObjectTemplate.damageOwner 1
+ObjectTemplate.armingDelay 0
+ObjectTemplate.maxSpeed 35
+ObjectTemplate.startDelay 0.2
+ObjectTemplate.activeDefenseEnabled 1
+
+
+
+rem ObjectTemplate.activeSafe Sound S_bri_Srifle_default_Fire3P
+rem ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Sniper\West_SFX_Weapon_GB_SNI_LeeEnfield_Fire_3P.wav"
+
+ObjectTemplate.activeSafe Sound S_Mortar_Strike_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\TNT\West_SFX_Weapon_GB_TNT_TNT_ClockTick.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+
+ObjectTemplate.activeSafe Sound S_Mortar_Strike_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Rifle\West_SFX_Weapon_GB_RIF_LeeEnfield_Reload_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_Mortar_Strike_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Arm_3P.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_bri_Srifle_default_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_Srifle_default_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_bri_Srifle_default_IdleMale1
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Sniper.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_Srifle_default_IdleMale2
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Sniper.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

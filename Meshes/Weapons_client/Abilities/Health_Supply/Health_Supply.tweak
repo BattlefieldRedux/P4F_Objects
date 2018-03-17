@@ -1,0 +1,291 @@
+rem TNT
+rem Weapon CON File for Health_Supply (2170)
+
+
+ObjectTemplate.create GenericFireArm Health_Supply
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 2170
+ObjectTemplate.geometry 
+
+GeometryTemplate.setSubGeometryLodDistance 1 0 5
+GeometryTemplate.setSubGeometryLodDistance 1 1 15
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+GeometryTemplate.hasAdditiveAlpha 1
+rem Animation
+ObjectTemplate.AnimationSystem1p Objects\soldiers\character1p\Animations\AmmoBox\AnimationSystem1p.inc
+ObjectTemplate.AnimationSystem3p Objects\soldiers\character3p\Animations\AmmoBox\AnimationSystem3p.inc
+
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2170.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2170.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Weapons\weapon3156n.tga
+ObjectTemplate.weaponHud.guiIndex 9
+ObjectTemplate.weaponHud.hasRangeFinder 1
+ObjectTemplate.weaponHud.addShowOnCamMode 3
+ObjectTemplate.weaponHud.useCartridgeBar 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_BRI_TNT_DEFAULT
+ObjectTemplate.weaponHud.ignoreTargetDistance 1
+ObjectTemplate.weaponHud.hudName "WEST_Custom_Item_3156"
+
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.roundsPerMinute 45
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.burstSize 0
+ObjectTemplate.fire.batchSize 1
+ObjectTemplate.fire.projectileStartPositionStand 0/-0.18/0.1
+ObjectTemplate.fire.projectileStartPositionCrouch 0/-0.18/0.1
+ObjectTemplate.fire.maxProjectilesInWorld 1
+ObjectTemplate.fire.busyUntilButtonRelease 0
+ObjectTemplate.fire.alwaysFireFromWeapon 1
+ObjectTemplate.fire.fireOnEnable 1
+ObjectTemplate.fire.criticalHitChance 0
+ObjectTemplate.fire.criticalHitDamage 0
+ObjectTemplate.fire.fireLaunchDelay 0
+ObjectTemplate.fire.fireCompleteDelay 0.3
+
+ObjectTemplate.createComponent ReplenishingAmmoComp
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.reloadTime 5
+ObjectTemplate.ammo.minimumTimeUntilReload 0.5
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 0
+ObjectTemplate.ammo.toggleWhenNoAmmo 1
+ObjectTemplate.ammo.reloadWithoutPlayer 1
+ObjectTemplate.ammo.abilityDrain 0.05
+ObjectTemplate.ammo.abilityRadius 4
+ObjectTemplate.ammo.abilityStrength 3
+ObjectTemplate.ammo.abilityCost 1
+ObjectTemplate.ammo.abilityMaterial 73
+ObjectTemplate.ammo.forceWeaponSwitchWhenNoAmmo 1
+
+
+ObjectTemplate.createComponent SoldierDeviationComp
+ObjectTemplate.deviation.minDev 0
+ObjectTemplate.deviation.subProjectileDev 0
+ObjectTemplate.deviation.minDevModZoom 0
+ObjectTemplate.deviation.setFireDev 0 0 0
+ObjectTemplate.deviation.setTurnDev 0 0 0 0
+ObjectTemplate.deviation.setSpeedDev 0 0 0 0
+ObjectTemplate.deviation.setMiscDev 0 0 0
+ObjectTemplate.deviation.syncDev 1
+
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.createComponent DefaultAnimationComp
+
+ObjectTemplate.createComponent DefaultZoomComp
+
+
+ObjectTemplate.setPosition 0/0/0
+
+ObjectTemplate.projectileTemplate Health_Supply_Projectile
+ObjectTemplate.keepProjectiles 2
+ObjectTemplate.velocity 6
+ObjectTemplate.canBeSelectedWhileReloading 0
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.2
+ObjectTemplate.weaponsItemType WITTnT
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.inheritParentSpeedSoldier 1
+ObjectTemplate.inheritParentSpeedVehicle 1
+ObjectTemplate.isDefaultWeapon 0
+ObjectTemplate.unstealthOnDeploy 0
+
+
+ObjectTemplate.create GenericProjectile Health_supply_Projectile
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.createNotInGrid 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.createComponent Armor
+ObjectTemplate.armor.maxHitPoints 100
+ObjectTemplate.armor.defaultMaterial 90
+ObjectTemplate.armor.waterLevel -0.3
+ObjectTemplate.armor.canBeRepaired 1
+
+rem ---BeginComp:Nametag ---
+ObjectTemplate.createComponent Nametag
+ObjectTemplate.Nametag.3dMapIcon 136
+ObjectTemplate.Nametag.3dMapIconOffset 0/0/0
+ObjectTemplate.Nametag.showItem 1
+ObjectTemplate.Nametag.show3dIcon 1
+ObjectTemplate.Nametag.glueToObjectCenter 1
+ObjectTemplate.Nametag.teamSpecific 1
+ObjectTemplate.Nametag.maxEnemyDistance 0
+
+ObjectTemplate.createComponent StickyCollisionComp
+ObjectTemplate.collision.maxStickAngle 180
+ObjectTemplate.collision.bouncing 1
+
+ObjectTemplate.createComponent DefaultDetonationComp
+ObjectTemplate.detonation.explosionMaterial 80
+ObjectTemplate.detonation.explosionRadius 0
+ObjectTemplate.detonation.explosionForce 0
+ObjectTemplate.detonation.explosionDamage 0
+ObjectTemplate.detonation.endEffectTemplate e_exp_micro
+ObjectTemplate.detonation.useMMOnEndEffect 1
+ObjectTemplate.detonation.detectionRadius 1.5
+ObjectTemplate.detonation.maxDepthForExplosion 2
+ObjectTemplate.detonation.canPickup 1
+
+ObjectTemplate.createComponent DefaultProjSoundComp
+
+ObjectTemplate.createComponent DefaultPenetrateComp
+ObjectTemplate.penetrate.allowSolidPenetration 0
+ObjectTemplate.penetrate.allowLiquidPenetration 1
+
+ObjectTemplate.geometry abil_medicbox
+ObjectTemplate.setCollisionMesh abil_medicbox
+ObjectTemplate.mapMaterial 80 collisionStickyTNT 46
+ObjectTemplate.drag 1
+ObjectTemplate.mass 2
+ObjectTemplate.floaterMod 0
+
+ObjectTemplate.gravityModifier 0.85
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+ObjectTemplate.collisionGroups 8
+ObjectTemplate.material 46
+
+ObjectTemplate.addTemplate Health_Supply_SupplyObject
+
+ObjectTemplate.timeToLive CRD_NONE/999999/0/0
+ObjectTemplate.material 46
+ObjectTemplate.hasOnTimeEffect 1
+ObjectTemplate.localPredictOnClient 1
+ObjectTemplate.initialMinDamage 1
+ObjectTemplate.mediumMinDamage 1
+ObjectTemplate.longMinDamage 1
+ObjectTemplate.initialMaxDamage 1
+ObjectTemplate.mediumMaxDamage 1
+ObjectTemplate.longMaxDamage 1
+ObjectTemplate.mediumDistance 10
+ObjectTemplate.longDistance 20
+
+ObjectTemplate.create SupplyObject Health_Supply_SupplyObject
+ObjectTemplate.setNetworkableInfo BasicInfo
+ObjectTemplate.setPosition 0/0/0
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.radius 10
+ObjectTemplate.workOnSoldiers 1
+ObjectTemplate.healSpeed 4
+ObjectTemplate.healStorageSize 100
+ObjectTemplate.ammoStorageSize 0
+ObjectTemplate.sharedStorageSize 0
+ObjectTemplate.destroyWhenEmptyStorage 1
+
+rem ObjectTemplate.activeSafe Sound S_bri_TNT_default_Fire3P
+rem ObjectTemplate.soundFilename "Sound\West\Weaponry\English\TNT\West_SFX_Weapon_GB_TNT_TNT_SetTNT.wav"
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_Fire3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\TNT\West_SFX_Weapon_GB_TNT_TNT_SetTNT.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 2
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.pitchEnvelope 0/1/0.9/1.1/1/1/0/0.97/1.03/
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.position 0/0/0.500329
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_Projectile_Looping
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\TNT\West_SFX_Weapon_GB_TNT_TNT_ClockTick.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1.0
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 1.7
+ObjectTemplate.halfVolumeDistance 3.2
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_Reload3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Reload_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.position 0/0/0.183854
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\English\Pistol\West_SFX_Weapon_GB_PIS_ColtM1911A1_Arm_3P.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.7
+ObjectTemplate.pitch 0.98
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 0.5
+ObjectTemplate.halfVolumeDistance 1
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_CriticalShotFire
+ObjectTemplate.modifiedByUser nfe
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Fire_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_CriticalShotHit
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Weaponry\Common\Critical\West_SFX_Common_Critical_Shot_Hit_3P.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 0
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 1
+ObjectTemplate.pitch 1
+ObjectTemplate.pan 0.5
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.volumeEnvelope 0/1/0/1/1/1/0/0.9/1/
+ObjectTemplate.minDistance 1.5
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_IdleMale1
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5
+
+ObjectTemplate.activeSafe Sound S_bri_TNT_default_IdleMale2
+ObjectTemplate.soundFilename "Sound\West\Idles\West_SFX_Idle_GB_Grenade.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 1
+ObjectTemplate.volume 0.8
+ObjectTemplate.pitch 1
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

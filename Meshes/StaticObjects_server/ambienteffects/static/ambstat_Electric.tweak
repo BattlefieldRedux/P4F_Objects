@@ -1,0 +1,10 @@
+rem *** Generated with Bf2Editor.exe [created: 2010/9/22 17:40]
+ObjectTemplate.activeSafe Bundle ambstat_electric
+ObjectTemplate.modifiedByUser "pwallo"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate e_sAmb_electric
+rem -------------------------------------
+

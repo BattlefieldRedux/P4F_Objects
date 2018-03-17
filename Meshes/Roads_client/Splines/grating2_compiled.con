@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled grating2
+ObjectTemplate.create SimpleObject grating2
+ObjectTemplate.geometry grating2

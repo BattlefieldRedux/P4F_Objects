@@ -1,0 +1,21 @@
+# mods/bf2142/Objects/Effects/Decals/Textures/Atlas/DecalAtlas.tai
+# 
+# 
+# <filename>		<atlas filename>, <atlas idx>, <woffset>, <hoffset>, <width>, <height>
+# 
+# Texture <filename> can be found in texture atlas <atlas filename>, i.e.,
+# <group><idx>.dds with texture coordinates boundary given by:
+#   A = ( <woffset>, <hoffset> )
+#   B = ( <woffset> + <width>, <hoffset> + <height> )
+# 
+# where coordinates (0,0) and (1,1) of the original texture map correspond
+# to coordinates A and B, respectively, in the texture atlas.
+
+
+objects/effects/decals/textures/Decal_glass01_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0, 0, 0.25, 1
+objects/effects/decals/textures/Decal_scorch01_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.25, 0, 0.25, 1
+objects/effects/decals/textures/Decal_scorch02_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.5, 0, 0.25, 1
+objects/effects/decals/textures/Decal_concreate01_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.75, 0, 0.125, 0.5
+objects/effects/decals/textures/Decal_concreate02_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.75, 0.5, 0.125, 0.5
+objects/effects/decals/textures/Decal_metalsolid_s01_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.875, 0, 0.125, 0.5
+objects/effects/decals/textures/Decal_thinmetal01_c.dds		Objects/Effects/Decals/Textures/Atlas/DecalAtlas0.dds, 0, 0.875, 0.5, 0.125, 0.5

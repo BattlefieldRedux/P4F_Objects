@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled B4
+ObjectTemplate.create SimpleObject B4
+ObjectTemplate.geometry B4

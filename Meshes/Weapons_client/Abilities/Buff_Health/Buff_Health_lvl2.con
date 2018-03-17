@@ -1,0 +1,4 @@
+ObjectTemplate.create GenericFireArm Buff_Health_lvl2
+ObjectTemplate.saveInSeparateFile 1
+
+include Buff_Health_lvl2.tweak

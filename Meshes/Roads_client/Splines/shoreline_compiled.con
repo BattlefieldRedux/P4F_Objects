@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled shoreline
+ObjectTemplate.create SimpleObject shoreline
+ObjectTemplate.geometry shoreline

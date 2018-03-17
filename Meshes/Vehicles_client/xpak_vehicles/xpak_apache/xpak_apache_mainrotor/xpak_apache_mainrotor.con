@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh xpak_apache_mainrotor
+CollisionManager.createTemplate xpak_apache_mainrotor
+
+ObjectTemplate.create Rotor xpak_apache_mainrotor
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator JEFFE_XP:jeffev
+ObjectTemplate.collisionMesh xpak_apache_mainrotor
+ObjectTemplate.mapMaterial 0 col_rotors 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry xpak_apache_mainrotor
+
+include xpak_apache_mainrotor.tweak

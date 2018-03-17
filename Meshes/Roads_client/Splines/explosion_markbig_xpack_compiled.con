@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled explosion_markbig_xpack
+ObjectTemplate.create SimpleObject explosion_markbig_xpack
+ObjectTemplate.geometry explosion_markbig_xpack

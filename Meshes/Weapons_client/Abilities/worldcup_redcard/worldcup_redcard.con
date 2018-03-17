@@ -1,0 +1,8 @@
+GeometryTemplate.create BundledMesh worldcup_redcard
+
+ObjectTemplate.create GenericFireArm worldcup_redcard
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-JLUNDE1:jlunde
+ObjectTemplate.geometry worldcup_redcard
+
+include worldcup_redcard.tweak

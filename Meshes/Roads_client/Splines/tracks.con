@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - tracks **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "tracks"
+RoadTemplate.SetWidth 14
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.85
+RoadTemplate.SetPrio 2
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\tracks_xpack"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "c:\dicecan\projects\bf2\bin\mods\bf2\objects\roads\textures\tarmac_layer1_lowtiling"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 2/2
+endIf
+

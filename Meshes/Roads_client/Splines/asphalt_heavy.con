@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - asphalt_heavy **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "asphalt_heavy"
+RoadTemplate.SetWidth 8
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.7
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Tarmac
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\french_countryside_big"
+RoadTemplateTexture.SetMirror 1
+RoadTemplateTexture.SetScale 1/0.5
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\multiroad01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 2/6
+endIf
+

@@ -1,0 +1,3 @@
+ObjectTemplate.create RemoteControlledObject ConsoleControlObject
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.rcType RCConsole

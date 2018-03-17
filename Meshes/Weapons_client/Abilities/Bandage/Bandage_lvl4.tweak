@@ -1,0 +1,76 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/8/2 5:19]
+ObjectTemplate.activeSafe GenericFireArm Bandage_lvl4
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.assetId 2004
+rem ---BeginComp:Ability ---
+ObjectTemplate.createComponent Ability
+ObjectTemplate.ability.addWeaponTemplate Bandage_lvl4
+ObjectTemplate.ability.addHealOverTimeItem 9 1.5 12
+ObjectTemplate.ability.userEffect EffectCommon_01 11
+rem ---BeginComp:WeaponHud ---
+ObjectTemplate.createComponent WeaponHud
+ObjectTemplate.weaponHud.weaponIcon Ingame\Abilities\ability2001.tga
+ObjectTemplate.weaponHud.selectIcon Ingame\Abilities\ability2001.tga
+ObjectTemplate.weaponHud.notSelectedIcon Ingame\Abilities\ability2001n.tga
+ObjectTemplate.weaponHud.hudName "Assault_Custom_Item_2001"
+ObjectTemplate.weaponHud.guiIndex 0
+ObjectTemplate.weaponHud.altGuiIndex 0
+ObjectTemplate.weaponHud.hasFireRate 0
+ObjectTemplate.weaponHud.disableOnSprint 1
+ObjectTemplate.weaponHud.descrString DESCRIPTION_WEAPON_Bandage
+rem ---EndComp ---
+rem ---BeginComp:SingleFireComp ---
+ObjectTemplate.createComponent SingleFireComp
+ObjectTemplate.fire.addFireRate 0
+ObjectTemplate.fire.fireInput PIAltFire
+ObjectTemplate.fire.forcedWeaponList 1
+rem ---EndComp ---
+rem ---BeginComp:AbilityAmmoComp ---
+ObjectTemplate.createComponent AbilityAmmoComp
+ObjectTemplate.ammo.allowReloadWithFullMag 1
+ObjectTemplate.ammo.autoReload 1
+ObjectTemplate.ammo.instantReloadOnEnable 1
+ObjectTemplate.ammo.magSize 1
+ObjectTemplate.ammo.nrOfMags -1
+ObjectTemplate.ammo.usageInterval 3
+ObjectTemplate.ammo.timeToStayActive 10
+ObjectTemplate.ammo.canBeDisabled 0
+rem ---EndComp ---
+rem ---BeginComp:HelpHud ---
+ObjectTemplate.createComponent HelpHud
+ObjectTemplate.HelpHud.helpStringKey "HUD_HELP_WEAPON_Bandage"
+ObjectTemplate.HelpHud.helpSoundKey "HUD_HELP_WEAPON_Bandage"
+rem ---EndComp ---
+rem ---BeginComp:DefaultSoundComp ---
+ObjectTemplate.createComponent DefaultSoundComp
+ObjectTemplate.sound.noisy 0
+rem ---EndComp ---
+rem ---BeginComp:DefaultAnimationComp ---
+ObjectTemplate.createComponent DefaultAnimationComp
+ObjectTemplate.animation.loopingFire 1
+rem ---EndComp ---
+rem -------------------------------------
+ObjectTemplate.addTemplate S_Bandage_lvl4_Deploy3P
+rem -------------------------------------
+ObjectTemplate.projectileTemplate Bandage_lvl4_Projectile
+ObjectTemplate.itemIndex 1
+ObjectTemplate.altItemIndex 10
+ObjectTemplate.delayToUse 0.7
+ObjectTemplate.allowEmoteAnimation 1
+ObjectTemplate.disableOnDamage 1
+ObjectTemplate.disableInsideVehicle 1
+ObjectTemplate.allowInWater 1
+ObjectTemplate.weaponsItemType WITBandage
+ObjectTemplate.activeSafe Sound S_Bandage_lvl4_Deploy3P
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "Sound\West\Abilities\West_SFX_Ability_Gen_Bandage_Activate_01.wav"
+ObjectTemplate.loopCount 1
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 1.0
+ObjectTemplate.pitch 1.0
+ObjectTemplate.reverbLevel 1
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 8
+ObjectTemplate.soundRadius 0.5

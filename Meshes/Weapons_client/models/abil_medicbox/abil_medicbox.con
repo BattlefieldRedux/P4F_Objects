@@ -1,0 +1,13 @@
+GeometryTemplate.create BundledMesh abil_medicbox
+CollisionManager.createTemplate abil_medicbox
+
+ObjectTemplate.create GenericFireArm abil_medicbox
+rem ObjectTemplate.saveInSeparateFile 1
+rem ObjectTemplate.creator DICE-DMOD1:dmod
+ObjectTemplate.collisionMesh abil_medicbox
+ObjectTemplate.mapMaterial 0 ColMaterial 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry abil_medicbox
+
+include abil_medicbox.tweak

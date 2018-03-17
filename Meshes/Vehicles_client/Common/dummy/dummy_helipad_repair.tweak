@@ -1,0 +1,23 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/6/5 4:3]
+ObjectTemplate.activeSafe Bundle dummy_helipad_repair
+ObjectTemplate.modifiedByUser "psh"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry connector
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate dummy_helipad_repair_SupplyObject
+ObjectTemplate.setPosition 0/5/0
+rem -------------------------------------
+
+ObjectTemplate.create SupplyObject dummy_helipad_repair_SupplyObject
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.radius 5
+ObjectTemplate.workOnSoldiers 0
+ObjectTemplate.workOnVehicles 1
+ObjectTemplate.healSpeed 8
+ObjectTemplate.refillAmmoSpeed 12
+ObjectTemplate.teamFromClosestCP 1
+ObjectTemplate.addVehicleType 3
+

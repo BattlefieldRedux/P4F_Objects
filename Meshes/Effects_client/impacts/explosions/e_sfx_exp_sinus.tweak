@@ -1,0 +1,39 @@
+rem *** Generated with Bf2Editor.exe [created: 2006/8/24 2:32]
+ObjectTemplate.activeSafe EffectBundle e_sfx_exp_sinus
+ObjectTemplate.modifiedByUser "bpa"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.createdInEditor 1
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+rem -------------------------------------
+ObjectTemplate.addTemplate S_e_sfx_exp_sinus_Start
+rem -------------------------------------
+rem begin Auto-generated effectProperties-part.
+ObjectTemplate.SoundIntensityRange 0/1
+ObjectTemplate.SoundIntensityUsed 0
+ObjectTemplate.SoundIntensityFromSpeed 0.5/7
+
+
+ObjectTemplate.setStartOnEffects 0
+ObjectTemplate.setStopOnEffects 0
+ObjectTemplate.timeToLive CRD_NONE/-1/0/0
+ObjectTemplate.randomAgeFactor CRD_NONE/1/0/0
+ObjectTemplate.startAtCreation 1
+ObjectTemplate.speedFromPhysics 0
+
+
+ObjectTemplate.activeSafe Sound S_e_sfx_exp_sinus_Start
+ObjectTemplate.lowSamples 2147483647
+ObjectTemplate.mediumSamples 2147483647
+ObjectTemplate.soundFilename "sound/effects/titan_core.wav"
+ObjectTemplate.loopCount 0
+ObjectTemplate.is3dSound 1
+ObjectTemplate.stopType 0
+ObjectTemplate.volume 0.45
+ObjectTemplate.pitch 1.6
+ObjectTemplate.volumeEnvelope 0/1/0/1/0/2/0/0/0/0.9/1/0/
+ObjectTemplate.reverbLevel 0
+ObjectTemplate.minDistance 3
+ObjectTemplate.halfVolumeDistance 7
+ObjectTemplate.soundRadius 0.5
+

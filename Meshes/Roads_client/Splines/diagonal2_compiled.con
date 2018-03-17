@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled diagonal2
+ObjectTemplate.create SimpleObject diagonal2
+ObjectTemplate.geometry diagonal2

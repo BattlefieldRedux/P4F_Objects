@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled sandyishdirt_xpack
+ObjectTemplate.create SimpleObject sandyishdirt_xpack
+ObjectTemplate.geometry sandyishdirt_xpack

@@ -1,0 +1,6 @@
+GeometryTemplate.create SoldierMeshItem Character1p_Hands001
+geometryTemplate.itemType CIT_Hands
+geometryTemplate.is1p 1
+
+ObjectTemplate.create KitPart Character1p_Hands001
+ObjectTemplate.geometry Character1p_Hands001

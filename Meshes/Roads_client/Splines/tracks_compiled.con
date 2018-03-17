@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled tracks
+ObjectTemplate.create SimpleObject tracks
+ObjectTemplate.geometry tracks

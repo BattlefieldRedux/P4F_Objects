@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle Expl_Keg_victim
+ObjectTemplate.createdInEditor 1
+
+include Expl_Keg_victim.tweak

@@ -1,0 +1,28 @@
+rem ** Setup the texture coordinate offset for the different mesh types when customizing the character **
+
+rem **1p
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale CIT_Body		0 	0/0/1024/1024
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale CIT_Hands		0	0/0/1024/1024
+
+rem **3p
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale CIT_Body		1 	0/0/1024/512
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Legs		1	0/512/369/296
+
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Hat			1	0/801/317/216
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Head		1	369/512/463/296
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_AccBack		1	0/0/1024/512
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Feet		1	832/512/192/124
+
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Hair		1	0/801/317/216
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_AccFront		1	550/808/310/216
+
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale CIT_Hands		1	0/0/1024/512
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Waist		1	317/801/233/216
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_FaceObj		1	832/636/192/172
+
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_Neck		1	860/808/164/216
+skinnedMeshRenderer.setCustomTextureCoordOffsetAndScale	CIT_FaceHair		1	832/636/192/86
+
+
+rem ** use this command to save the generated atlas to disk, "C:\textureAtlas.dds" ** 
+skinnedMeshRenderer.setSaveCustomizedTextureAtlasToDisk 0

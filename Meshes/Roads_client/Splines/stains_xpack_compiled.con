@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled stains_xpack
+ObjectTemplate.create SimpleObject stains_xpack
+ObjectTemplate.geometry stains_xpack

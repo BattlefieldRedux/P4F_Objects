@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Exp_Gas_Fire_Victim
+ObjectTemplate.createdInEditor 1
+
+include E_Exp_Gas_Fire_Victim.tweak

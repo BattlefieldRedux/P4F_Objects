@@ -1,0 +1,14 @@
+GeometryTemplate.create StaticMesh invisible_02
+CollisionManager.createTemplate invisible_02
+
+ObjectTemplate.create SimpleObject invisible_02
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator DICE-DMOD2:dmod
+ObjectTemplate.collisionMesh invisible_02
+ObjectTemplate.mapMaterial 0 wood 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry invisible_02
+ObjectTemplate.anchor -0.3150/-0.7500/-0.4100
+
+include invisible_02.tweak

@@ -1,0 +1,52 @@
+GeometryTemplate.create BundledMesh unl_hub_medic_stationary
+CollisionManager.createTemplate unl_hub_medic_stationary
+
+ObjectTemplate.create GenericProjectile unl_hub_medic_stationary
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.creator SJU-1:sju
+ObjectTemplate.collisionMesh unl_hub_medic_stationary
+ObjectTemplate.mapMaterial 0 collisionLambert 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType 3
+ObjectTemplate.geometry unl_hub_medic_stationary
+ObjectTemplate.bundleSkeleton objects/weapons/stationary/unl_hub_medic_stationary/unl_hub_medic_stationary.ske
+ObjectTemplate.addTemplate Unl_Hub_Medic_Supply
+ObjectTemplate.addTemplate UNL_HUB_Medic_lid1
+ObjectTemplate.addTemplate UNL_HUB_Medic_lid2
+ObjectTemplate.addTemplate UNL_HUB_Medic_handle1
+ObjectTemplate.addTemplate UNL_HUB_Medic_handle2
+ObjectTemplate.addTemplate UNL_HUB_Medic_interior
+ObjectTemplate.addTemplate UNL_HUB_Medic_lock1
+ObjectTemplate.addTemplate UNL_HUB_Medic_lock2
+
+ObjectTemplate.create SupplyObject Unl_Hub_Medic_Supply
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_lid1
+ObjectTemplate.geometryPart 1
+ObjectTemplate.boneIndex 1
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_lid2
+ObjectTemplate.geometryPart 2
+ObjectTemplate.boneIndex 2
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_handle1
+ObjectTemplate.geometryPart 3
+ObjectTemplate.boneIndex 3
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_handle2
+ObjectTemplate.geometryPart 4
+ObjectTemplate.boneIndex 4
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_interior
+ObjectTemplate.geometryPart 5
+ObjectTemplate.boneIndex 5
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_lock1
+ObjectTemplate.geometryPart 6
+ObjectTemplate.boneIndex 6
+
+ObjectTemplate.create SimpleObject UNL_HUB_Medic_lock2
+ObjectTemplate.geometryPart 7
+ObjectTemplate.boneIndex 7
+
+include unl_hub_medic_stationary.tweak

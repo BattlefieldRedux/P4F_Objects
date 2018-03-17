@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled tunis_parking
+ObjectTemplate.create SimpleObject tunis_parking
+ObjectTemplate.geometry tunis_parking

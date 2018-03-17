@@ -1,0 +1,4 @@
+ObjectTemplate.create EffectBundle E_Ability_PrestigeUp
+ObjectTemplate.createdInEditor 1
+
+include E_Ability_PrestigeUp.tweak

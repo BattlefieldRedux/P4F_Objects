@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2008/3/3 16:49]
+ObjectTemplate.activeSafe Particle p_shell_9mm
+ObjectTemplate.creator NGOKSU
+ObjectTemplate.modifiedByUser "NGOKSU"
+ObjectTemplate.saveInSeparateFile 1
+ObjectTemplate.geometry p_shell_9mm
+ObjectTemplate.usedOnTransparentSurface 0
+ObjectTemplate.collisionMesh p_shell_9mm
+ObjectTemplate.mapMaterial 0 shellcasing_smallarms 63
+ObjectTemplate.collisionGroups 60
+ObjectTemplate.mass 0.05
+ObjectTemplate.hasMobilePhysics 1
+ObjectTemplate.physicsType RotationalPoint
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.timeToLive CRD_UNIFORM/2/1/0
+ObjectTemplate.size CRD_NONE/0.7/0/0
+ObjectTemplate.sizeModifier 1/1/1
+ObjectTemplate.transparencyGraph 0/0/0/1
+ObjectTemplate.transparency CRD_NONE/0/0/0
+ObjectTemplate.qualityLevel Medium
+

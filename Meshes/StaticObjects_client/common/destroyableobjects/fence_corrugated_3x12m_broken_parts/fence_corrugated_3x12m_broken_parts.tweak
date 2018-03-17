@@ -1,0 +1,21 @@
+rem *** Generated with Bf2Editor.exe [created: 2005/5/2 17:30]
+GeometryTemplate.maxSkip3pLods 3
+GeometryTemplate.setSubGeometryLodDistance 0 0 35
+GeometryTemplate.setSubGeometryLodDistance 0 1 55
+GeometryTemplate.doNotGenerateLightmaps 1
+GeometryTemplate.lightmapOverride 0
+GeometryTemplate.compressVertexData 1
+GeometryTemplate.maxTextureRepeat 16
+ObjectTemplate.activeSafe SimpleObject fence_corrugated_3x12m_broken_parts
+ObjectTemplate.creator ENI-2:eni
+ObjectTemplate.modifiedByUser ful
+ObjectTemplate.saveInSeparateFile 1
+
+ObjectTemplate.geometry fence_corrugated_3x12m_broken_parts
+ObjectTemplate.setCollisionMesh fence_corrugated_3x12m_broken_parts
+ObjectTemplate.mapMaterial 0 wood 59
+ObjectTemplate.floaterMod 0
+ObjectTemplate.hasMobilePhysics 0
+ObjectTemplate.hasCollisionPhysics 1
+ObjectTemplate.physicsType Mesh
+

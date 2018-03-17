@@ -1,0 +1,19 @@
+if v_arg1 == BF2Editor
+rem ** [RoadTemplate] - west_dirtroad **
+RoadTemplate.CreateInstance
+RoadTemplate.SetName "west_dirtroad"
+RoadTemplate.SetWidth 5
+RoadTemplate.SetMaxTesselatedError 0.01
+RoadTemplate.SetBlendFactor 0.85
+RoadTemplate.SetPrio 0
+RoadTemplate.SetMaterial Default
+RoadTemplate.SetIsPrimaryTexture 1
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\west_dirtroad01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+RoadTemplate.SetIsPrimaryTexture 0
+RoadTemplateTexture.SetTextureFile "objects\roads\textures\west_dirtroad01"
+RoadTemplateTexture.SetMirror 0
+RoadTemplateTexture.SetScale 1/1
+endIf
+

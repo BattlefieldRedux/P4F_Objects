@@ -1,0 +1,3 @@
+GeometryTemplate.create RoadCompiled traintracks_5m
+ObjectTemplate.create SimpleObject traintracks_5m
+ObjectTemplate.geometry traintracks_5m
